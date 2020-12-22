@@ -49,17 +49,17 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="el-item overlay-image" style="
-                    background-image: url(assets/images/images/hero-1-1.jpg);
+                    background-image: url(assets/images/Dasboard/book.jpg);
                   "></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="el-item overlay-image" style="
-                    background-image: url(assets/images/images/hero-1-2.jpg);
+                    background-image: url(assets/images/Dasboard/shutterstock_423025330.png);
                   "></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="el-item overlay-image" style="
-                    background-image: url(assets/images/images/hero-1-3.jpg);
+                    background-image: url(assets/images/Dasboard/2048566809.jpg);
                   "></div>
                     </div>
                 </div>

@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7f70338-50ac-4820-bc82-34aadcf2e4ba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/assets/images/Dasboard/2048566809.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/Dasboard/Nanyang-Technological-University-619x381.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/Dasboard/book.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/Dasboard/oxford-university-53ea8fe6f034e0888bba0fb0bb5a7055_600x400.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/Dasboard/rode.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/Dasboard/shutterstock_423025330.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dasboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dasboard.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,18 +122,21 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1lUZF5NkVFgrMTDmicyNtpTqr8T" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../project-ppl-web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../uts" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -151,7 +160,7 @@
       <workItem from="1608138584385" duration="2137000" />
       <workItem from="1608347608201" duration="3319000" />
       <workItem from="1608579685436" duration="845000" />
-      <workItem from="1608627398841" duration="2133000" />
+      <workItem from="1608627398841" duration="4469000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1608579780706</created>
@@ -167,14 +176,23 @@
       <option name="project" value="LOCAL" />
       <updated>1608579907371</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Perbaikan Navbar">
+      <created>1608638872537</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608638872537</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="up" />
-    <option name="LAST_COMMIT_MESSAGE" value="up" />
+    <MESSAGE value="Perbaikan Navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Perbaikan Navbar" />
   </component>
 </project>
