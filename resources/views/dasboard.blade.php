@@ -71,46 +71,46 @@
     <span class="bg-pattern bg-pattern-3"></span>
     <div class="hero-inner display-center">
         <div class="hero-content text-center">
-            <h1>WG FARMING</h1>
+            <h1>Beasiswa Kreativitas</h1>
             <p class="text-dark">
-                WG Farm mengawal dari awal
+                Akan Mengawal Dari Awal
             </p>
         </div>
     </div>
 </section>
 <!--/-->
 <!--Features-->
-<section class="section section-features-line section-features-line-1">
+<section class="section section-features-line section-features-line-1 center">
     <div class="display-spacing">
         <div class="container">
             <div class="el-box">
                 <div class="row row-sm">
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
                         <div class="item">
-                            <img src="assets/images/icons/fl-1.png" alt="--Alternative--" />
-                            <h2>Pengantaran Gratis</h2>
-                            <p>Pasti sampai di tangan</p>
+                            <img src="assets/images/icons/user.png" alt="--Alternative--" />
+                            <h2>Semua Kalangan</h2>
+                            <p>Pasti dikonfirmasi</p>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
                         <div class="item">
                             <img src="assets/images/icons/fl-4.png" alt="--Alternative--" />
-                            <h2>Aman Murah</h2>
-                            <p>Coba cek toko sebelah</p>
+                            <h2>Pencairan</h2>
+                            <p>Coba cek Website sebelah</p>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
                         <div class="item">
                             <img src="assets/images/icons/fl-3.png" alt="--Alternative--" />
-                            <h2>Diskon menjamur</h2>
-                            <p>Tunggu diskon menarik dari kami</p>
+                            <h2>Biaya Pendidikan</h2>
+                            <p>Pasti Sangat Terbantu</p>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
                         <div class="item">
                             <img src="assets/images/icons/fl-2.png" alt="--Alternative--" />
                             <h2>24 jam</h2>
-                            <p>Kami siap</p>
+                            <p>Kami Siap Membantu</p>
                         </div>
                     </div>
                 </div>
@@ -125,13 +125,13 @@
         <div class="row row-sm">
             <div class="col-lg-8 col-xl-8">
                 <div class="el-item el-hover el-item-1 pt-50pe">
-                    <div class="image overlay-image" style="background-image: url(assets/images/features/7-1.jpg)">
+                    <div class="image overlay-image" style="background-image: url(assets/images/Dasboard/rode.jpg)">
                     </div>
                     <div class="display-center">
                         <div class="inner">
-                            <h2 class="title">WG FARMING<br />Pasti ada terus</h2>
-                            <a href="/shop" class="button button-sm button-dark mt-20">
-                                <span class="text">Pergi ke Toko</span>
+                            <h2 class="title" style="color: white">BKREA<br />Beasiswa Kreativ</h2>
+                            <a href="#" class="button button-sm button-dark mt-20">
+                                <span class="text">List Beasiswa</span>
                             </a>
                         </div>
                     </div>
@@ -142,14 +142,14 @@
                     <div class="col-12 col-sm-6 col-md-6 col-lg-12 col-xl-12">
                         <div class="el-item el-hover pt-50pe">
                             <div class="image overlay-image" style="
-                      background-image: url(assets/images/features/7-2.jpg);
+                      background-image: url(assets/images/Dasboard/GOP9a_2.jpeg);
                     "></div>
                             <div class="display-center">
                                 <div class="inner">
-                                    <h3 class="title title-2">
-                                        Makanan Sehat<br />
-                                        100% aman<br />
-                                        dan segar
+                                    <h3 class="title title-2" style="color: white">
+                                        Beasiswa<br />
+                                        Dengan Predikat<br />
+                                        Terbaik
                                     </h3>
                                 </div>
                             </div>
@@ -160,8 +160,8 @@
                             <div class="display-center">
                                 <div class="inner">
                                     <h3 class="title title-2 text-light">
-                                        5% Diskon<br />
-                                        Sayuran &<br />Buah
+                                        Dapatkan Beasiswa<br />
+                                        yang anda inginkan &<br />Raih Cita Cita
                                     </h3>
                                 </div>
                             </div>
@@ -212,23 +212,20 @@
 <!--/-->
 <!--Call-To-Action-->
 <section class="section section-cta section-cta-7 overlay-image mt--30"
-         style="background-image: url(assets/images/images/bg-7.png)">
+         style="background-image: url(assets/images/Dasboard/Kuliah-1024x569.jpg)">
     <div class="display-spacing">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <header class="el-heading el-heading-4">
-                        <h2>
-                            Ada Diskon sampai <span class="bigger text-gradient">80%</span> Lho.<br />
-                            Pada akhir tahun dan lebaran
+                        <h2 style="color: white">
+                            Ada Banyak Sekali <span class="bigger text-gradient">Beasiswa</span> Lho.<br />
+                            Yang Siap Menyambutmu
                         </h2>
-                        <p class="mb-75">
-                            Pastikan Pengantara sampai dengan selamat.
+                        <p class="mb-75" style="color: white">
+                            Pastikan Beasiswamu.
                         </p>
                     </header>
-                    <div class="el-countdown" data-time="2020/12/12"
-                         data-labels='{"label-day": "Days", "label-hour": "Hours", "label-minute": "Mins", "label-second": "Secs"}'>
-                    </div>
                 </div>
             </div>
         </div>
@@ -240,8 +237,8 @@
 <footer class="app-footer app-footer-1">
     <div class="footer-copyright">
         <div class="container">
-            <p><span class="text-bold">WG FARM</span> Sayuran sehat segar berkualitas</p>
-            <p class="text-2">WGFARMING © 2020 All Rights Reserved</p>
+            <p><span class="text-bold">BKREA</span> Beasiswa Kreativitas</p>
+            <p class="text-2">BKREA © 2020 Muhammad Agung Santoso</p>
         </div>
     </div>
 </footer>
@@ -286,9 +283,9 @@
             <li class="afra-demo-color-24" style="background-color: #d78150"></li>
         </ul>
     </div>
-    <div class="afra-demo-toggle">
-        <i class="ti-settings"></i>
-    </div>
+{{--    <div class="afra-demo-toggle">--}}
+{{--        <i class="ti-settings"></i>--}}
+{{--    </div>--}}
 </div>
 <!--Scripts-->
 <script src="assets/js/jquery.min.js"></script>

@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7f70338-50ac-4820-bc82-34aadcf2e4ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/images/Dasboard/2048566809.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/Dasboard/Nanyang-Technological-University-619x381.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/Dasboard/book.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/Dasboard/oxford-university-53ea8fe6f034e0888bba0fb0bb5a7055_600x400.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/Dasboard/rode.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/Dasboard/shutterstock_423025330.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/Dasboard/GOP9a_2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/Dasboard/Kuliah-1024x569.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/Dasboard/swansea-university-campus.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dasboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dasboard.blade.php" afterDir="false" />
     </list>
@@ -160,7 +157,7 @@
       <workItem from="1608138584385" duration="2137000" />
       <workItem from="1608347608201" duration="3319000" />
       <workItem from="1608579685436" duration="845000" />
-      <workItem from="1608627398841" duration="4469000" />
+      <workItem from="1608627398841" duration="7229000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1608579780706</created>
@@ -183,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608638872537</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Perbaikan Navbar">
+      <created>1608641401606</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608641401606</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
