@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('dasboard');
-});
+
+/*
+(------------------->>> Route Untuk User <<<-----------------------)
+*/
+
+Route::get('/', 'DashboardController@index')->name('home');
+
+
