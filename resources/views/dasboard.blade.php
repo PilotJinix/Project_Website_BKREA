@@ -32,7 +32,7 @@
 <!--/-->
 <!--Sidenav-->
 <div class="app-sidenav app-sidenav-1">
-{{--    @include('layouts.sidemainmenu')--}}
+    @include('layouts.sidebar')
     <span class="sidenav-close"></span>
 </div>
 <!--/-->
