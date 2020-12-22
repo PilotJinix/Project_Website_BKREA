@@ -78,21 +78,24 @@
             <div class="row row-sm">
                 <!--Item-->
 {{--                @foreach ($blog as $item)--}}
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                        <div class="el-card el-card-blog el-card-blog-1 el-hover"
-                             style="box-shadow: 0px 0px 10px #bebebe">
-                            <div class="post-image">
-                                <img src="{{asset('assets/images/blog/1-1.jpg')}}" alt="--Alternative--">
-                            </div>
-                            <div class="details">
-                                <h3>
-                                    <a href="#" title="#">
-                                        <span class="text">Ini Deskripsi Berita</span>
-                                    </a>
-                                </h3>
-                            </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="el-card el-card-blog el-card-blog-1 el-hover">
+                        <div class="post-image">
+                            <img src="assets/images/blog/1-2.jpg" alt="--Alternative--">
+                            <a href="blog-single-post-2.html" class="button button-read-more">
+                                <span class="text">Read More</span>
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3>
+                                <a href="blog-single-post-2.html" title="Fila Locker Room Varsity Jacket">
+                                    <span class="text">Blogging for business? Here’s everything you need to know.</span>
+                                </a>
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
+                </div>
 {{--            @endforeach--}}
             <!--/-->
             </div>
