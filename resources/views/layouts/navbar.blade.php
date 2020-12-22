@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8">
-            <div class="header-logo"><span>WG FARM</span></div>
+            <div class="header-logo"><span>BKREA</span></div>
             <ul class="menu">
                 <li class="el-megamenu el-megamenu-xs">
                     @guest
@@ -16,13 +16,13 @@
                 </li>
                 <li class="el-megamenu el-megamenu-lg">
                     <a href="#">
-                        <span class="text text-light">Toko</span>
+                        <span class="text text-light">List Beasiswa</span>
                         <i class="ti-angle-down hidden-lg-up"></i>
                     </a>
                 </li>
                 <li class="el-megamenu el-megamenu-lg">
                     <a href="#">
-                        <span class="text text-light">Blog</span>
+                        <span class="text text-light">Berita</span>
                         <i class="ti-angle-right hidden-lg-up"></i>
                     </a>
                 </li>
@@ -69,13 +69,13 @@
                                         <span class="text">Login</span>
                                     </a>
                                 </li>
-                                @if (Route::has('register'))
+{{--                                @if (Route::has('register'))--}}
                                     <li>
                                         <a href="#">
                                             <span class="text">Register</span>
                                         </a>
                                     </li>
-                                @endif
+{{--                                @endif--}}
                             @else
                                 <li>
                                     <a href="#">
