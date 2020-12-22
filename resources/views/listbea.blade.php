@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-    @section('title', 'Berita')
+    @section('title', 'List Beasiswa')
     @include('layouts.head')
 </head>
 
@@ -49,7 +49,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-right">
-                        <h1>Berita Terbaru</h1>
+                        <h1>List Beasiswa</h1>
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                         <ul class="el-breadcrumbs el-breadcrumbs-1 text-light">
@@ -60,7 +60,7 @@
                             </li>
                             <li>
                                 <a href="#" class="active">
-                                    <span class="text">Berita</span>
+                                    <span class="text">List Beasiswa</span>
                                 </a>
                             </li>
                         </ul>
@@ -77,27 +77,27 @@
         <div class="container">
             <div class="row row-sm">
                 <!--Item-->
-{{--                @foreach ($blog as $item)--}}
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                        <div class="el-card el-card-blog el-card-blog-1 el-hover"
-                             style="box-shadow: 0px 0px 10px #bebebe">
-                            <div class="post-image">
-                                <img src="{{asset('assets/images/blog/1-1.jpg')}}" alt="--Alternative--">
-                            </div>
-                            <div class="details">
-                                <h3>
-                                    <a href="#" title="#">
-                                        <span class="text">Ini Deskripsi Berita</span>
-                                    </a>
-                                </h3>
-                            </div>
+                {{--                @foreach ($blog as $item)--}}
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="el-card el-card-blog el-card-blog-1 el-hover"
+                         style="box-shadow: 0px 0px 10px #bebebe">
+                        <div class="post-image">
+                            <img src="{{asset('assets/images/blog/1-1.jpg')}}" alt="--Alternative--">
+                        </div>
+                        <div class="details">
+                            <h3>
+                                <a href="#" title="#">
+                                    <span class="text">Ini Deskripsi Berita</span>
+                                </a>
+                            </h3>
                         </div>
                     </div>
-{{--            @endforeach--}}
+                </div>
+            {{--            @endforeach--}}
             <!--/-->
             </div>
             <div class="el-pagination text-center pt-space-half">
-{{--                {{$blog->links()}}--}}
+                {{--                {{$blog->links()}}--}}
             </div>
         </div>
     </div>

@@ -5,23 +5,23 @@
             <ul class="menu">
                 <li class="el-megamenu el-megamenu-xs">
                     @guest
-                        <a href="#">
+                        <a href="{{route('home')}}">
                             <span class="text text-light">Beranda</span>
                         </a>
                     @else
-                        <a href="#">
+                        <a href="{{route('home')}}">
                             <span class="text text-light">Beranda</span>
                         </a>
                     @endguest
                 </li>
                 <li class="el-megamenu el-megamenu-lg">
-                    <a href="#">
+                    <a href="{{route('listbea')}}">
                         <span class="text text-light">List Beasiswa</span>
                         <i class="ti-angle-down hidden-lg-up"></i>
                     </a>
                 </li>
                 <li class="el-megamenu el-megamenu-lg">
-                    <a href="#">
+                    <a href="{{route('berita')}}">
                         <span class="text text-light">Berita</span>
                         <i class="ti-angle-right hidden-lg-up"></i>
                     </a>
