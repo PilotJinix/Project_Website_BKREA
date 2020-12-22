@@ -82,13 +82,13 @@
                     <div class="el-card el-card-blog el-card-blog-1 el-hover">
                         <div class="post-image">
                             <img src="assets/images/blog/1-2.jpg" alt="--Alternative--">
-                            <a href="blog-single-post-2.html" class="button button-read-more">
+                            <a href="{{route('detailberita')}}" class="button button-read-more">
                                 <span class="text">Read More</span>
                             </a>
                         </div>
                         <div class="details">
                             <h3>
-                                <a href="blog-single-post-2.html" title="Fila Locker Room Varsity Jacket">
+                                <a href="{{route('detailberita')}}" title="Fila Locker Room Varsity Jacket">
                                     <span class="text">Blogging for business? Here’s everything you need to know.</span>
                                 </a>
                             </h3>

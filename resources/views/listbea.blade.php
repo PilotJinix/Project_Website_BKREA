@@ -108,8 +108,8 @@
     <footer class="app-footer app-footer-1" style="bottom: 0">
         <div class="footer-copyright">
             <div class="container">
-                <p><span class="text-bold">WG FARM</span> sayuran dan buah segar</p>
-                <p class="text-2">© 2020 All Rights Reserved</p>
+                <p><span class="text-bold">BKREA</span> Beasiswa Kreativitas</p>
+                <p class="text-2">BKREA © 2020 Muhammad Agung Santoso</p>
             </div>
         </div>
     </footer>
