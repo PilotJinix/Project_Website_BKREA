@@ -19,6 +19,7 @@
 Route::get('/', 'DashboardController@index')->name('home');
 
 Route::get('listbea', 'ListBeaController@index')->name('listbea');
+Route::get('detailbea', 'ListBeaController@detailbea')->name('detailbea');
 
 Route::get('berita', 'BeritaController@index')->name('berita');
 Route::get('detailberita', 'BeritaController@detailberita')->name('detailberita');
