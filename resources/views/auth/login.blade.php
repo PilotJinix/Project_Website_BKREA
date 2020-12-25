@@ -121,43 +121,6 @@
 </section>
 <!--/-->
 <!--Footer-->
-<footer class="app-footer app-footer-0 app-footer-4 ${props.class}">
-    <div class="footer-copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
-                </div>
-                <div class="hidden-lg-down col-lg-6">
-                    <ul class="menu">
-                        <li>
-                            <a href="{{url('/')}}">
-                                <span class="text">Beranda</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{url('/')}}">
-                                <span class="text">Best Sales</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{url('about')}}">
-                                <span class="text">Tentang Kami</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{url('/')}}">
-                                <span class="text">Contact Us</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-right">
-                    <p>© 2020 All rights reserved</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
 <!--Scripts-->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/plugins.min.js"></script>

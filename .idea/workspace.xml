@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7f70338-50ac-4820-bc82-34aadcf2e4ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/applybea.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ListBeaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ListBeaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/detailbea.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/detailbea.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +159,7 @@
       <workItem from="1608706615391" duration="5346000" />
       <workItem from="1608722228085" duration="260000" />
       <workItem from="1608746160179" duration="2606000" />
-      <workItem from="1608811950986" duration="5205000" />
+      <workItem from="1608811950986" duration="8543000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1608579780706</created>
@@ -252,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608711349372</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Up">
+      <created>1608888830557</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1608888830557</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +264,7 @@
     <MESSAGE value="Perbaikan Navbar" />
     <MESSAGE value="routing" />
     <MESSAGE value="detail bea" />
-    <option name="LAST_COMMIT_MESSAGE" value="detail bea" />
+    <MESSAGE value="Up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Up" />
   </component>
 </project>
