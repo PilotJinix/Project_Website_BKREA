@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7f70338-50ac-4820-bc82-34aadcf2e4ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/detailbea.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/applybea.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ListBeaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ListBeaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/listbea.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/listbea.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/detailbea.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/detailbea.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +137,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/coding/MY ASSET/PPL/USER5/demo.afracode.com/orwell" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -159,7 +163,10 @@
       <workItem from="1608579685436" duration="845000" />
       <workItem from="1608627398841" duration="9760000" />
       <workItem from="1608656953733" duration="6762000" />
-      <workItem from="1608706615391" duration="3724000" />
+      <workItem from="1608706615391" duration="5346000" />
+      <workItem from="1608722228085" duration="260000" />
+      <workItem from="1608746160179" duration="2606000" />
+      <workItem from="1608811950986" duration="5205000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1608579780706</created>
@@ -238,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608665834848</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="detail bea">
+      <created>1608711349372</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1608711349372</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +263,7 @@
     <MESSAGE value="up" />
     <MESSAGE value="Perbaikan Navbar" />
     <MESSAGE value="routing" />
-    <option name="LAST_COMMIT_MESSAGE" value="routing" />
+    <MESSAGE value="detail bea" />
+    <option name="LAST_COMMIT_MESSAGE" value="detail bea" />
   </component>
 </project>

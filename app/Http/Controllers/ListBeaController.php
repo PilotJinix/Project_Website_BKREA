@@ -11,4 +11,8 @@ class ListBeaController extends Controller
     public function detailbea(){
         return view('detailbea');
     }
+
+    public function lanjutisi(){
+        return view('applybea');
+    }
 }

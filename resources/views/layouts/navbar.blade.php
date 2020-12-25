@@ -65,13 +65,13 @@
                         <ul class="el-list text-left">
                             @guest
                                 <li>
-                                    <a href="#">
+                                    <a href="{{route('login')}}">
                                         <span class="text">Login</span>
                                     </a>
                                 </li>
 {{--                                @if (Route::has('register'))--}}
                                     <li>
-                                        <a href="#">
+                                        <a href="{{route('register')}}">
                                             <span class="text">Register</span>
                                         </a>
                                     </li>

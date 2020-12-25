@@ -126,7 +126,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <form action="#" method="get">
+                        <form action="{{route('lanjutisi')}}" method="get">
                             <div class="row row-0">
                                 <div class="col-6">
                                     <span class="var" style="font-weight: bold">Jumlah</span>
