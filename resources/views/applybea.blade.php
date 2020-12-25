@@ -86,7 +86,7 @@
 <section class="section section-page section-checkout section-checkout-1">
     <div class="page-body">
         <div class="display-spacing">
-            <form action="#" class="form-3" method="post">
+            <form action="#" class="form-3">
                 @csrf
                 <div class="container">
                     <div class="row row-sm">

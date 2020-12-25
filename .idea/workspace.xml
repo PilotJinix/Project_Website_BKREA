@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c7f70338-50ac-4820-bc82-34aadcf2e4ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/applybea.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/applybea.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +159,7 @@
       <workItem from="1608706615391" duration="5346000" />
       <workItem from="1608722228085" duration="260000" />
       <workItem from="1608746160179" duration="2606000" />
-      <workItem from="1608811950986" duration="8543000" />
+      <workItem from="1608811950986" duration="9822000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1608579780706</created>
@@ -252,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608888830557</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Up">
+      <created>1608912481616</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1608912481616</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
