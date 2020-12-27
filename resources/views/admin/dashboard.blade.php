@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    @section('title', 'Dashboard')
     @include('admin.layouts.head')
 </head>
 <body>

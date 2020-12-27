@@ -3,8 +3,8 @@
         <div class="navbar navbar-md no-radius">
             <!-- brand -->
             <a class="navbar-brand">
-                <div ui-include="'../assets/images/logo.svg'"></div>
-                <img src="../assets/images/logo.png" alt="." class="hide">
+                <div ui-include="{{asset('admin/assets/images/logo.svg')}}"></div>
+                <img src="{{asset('admin/assets/images/logo.png')}}" alt="." >
                 <span class="hidden-folded inline">Flatkit</span>
             </a>
             <!-- / brand -->
