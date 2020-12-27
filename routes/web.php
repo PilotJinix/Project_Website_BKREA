@@ -28,4 +28,14 @@ Route::get('berita', 'BeritaController@index')->name('berita');
 Route::get('detailberita', 'BeritaController@detailberita')->name('detailberita');
 
 
+/*
+(------------------->>> Route Untuk admin <<<-----------------------)
+*/
+
+//Route::get('/admin', 'DashboardAController@index')->name('homeadmin');
+Route::get('tesadmin', 'Admin\DashboardAController@index')->name('homeadmin');
+
+
+
+
 

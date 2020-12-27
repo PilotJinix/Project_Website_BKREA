@@ -26,6 +26,12 @@
                         <i class="ti-angle-right hidden-lg-up"></i>
                     </a>
                 </li>
+                <li class="el-megamenu el-megamenu-lg">
+                    <a href="{{route('homeadmin')}}">
+                        <span class="text text-light">Berita</span>
+                        <i class="ti-angle-right hidden-lg-up"></i>
+                    </a>
+                </li>
                 @guest
                 @else
                     @if ($akun->status == 'mitra')
