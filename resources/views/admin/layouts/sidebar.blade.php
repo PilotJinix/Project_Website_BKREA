@@ -11,36 +11,33 @@
         </div>
         <div flex class="hide-scroll">
             <nav class="scroll nav-active-primary">
-
                 <ul class="nav" ui-nav>
                     <li class="nav-header hidden-folded">
                         <small class="text-muted">Main</small>
                     </li>
-
                     <li>
                         <a href="dashboard.0.html" >
-                  <span class="nav-icon">
-                    <i class="material-icons">&#xe3fc;
-                      <span ui-include="'../assets/images/i_0.svg'"></span>
-                    </i>
-                  </span>
+                            <span class="nav-icon">
+                                <i class="material-icons">&#xe3fc;
+                                    <span ui-include="'../assets/images/i_0.svg'"></span>
+                                </i>
+                            </span>
                             <span class="nav-text">Dashboard</span>
                         </a>
                     </li>
-
                     <li>
                         <a>
-                  <span class="nav-caret">
-                    <i class="fa fa-caret-down"></i>
-                  </span>
+                            <span class="nav-caret">
+                                <i class="fa fa-caret-down"></i>
+                            </span>
                             <span class="nav-label">
-                    <b class="label rounded label-sm primary">5</b>
-                  </span>
+                                <b class="label rounded label-sm primary">5</b>
+                            </span>
                             <span class="nav-icon">
-                    <i class="material-icons">&#xe5c3;
-                      <span ui-include="'../assets/images/i_1.svg'"></span>
-                    </i>
-                  </span>
+                                <i class="material-icons">&#xe5c3;
+                                    <span ui-include="'../assets/images/i_1.svg'"></span>
+                                </i>
+                            </span>
                             <span class="nav-text">Apps</span>
                         </a>
                         <ul class="nav-sub">
@@ -61,48 +58,16 @@
                             </li>
                         </ul>
                     </li>
-
-                    <li>
-                        <a>
-                  <span class="nav-caret">
-                    <i class="fa fa-caret-down"></i>
-                  </span>
-                            <span class="nav-icon">
-                    <i class="material-icons">&#xe8f0;
-                      <span ui-include="'../assets/images/i_2.svg'"></span>
-                    </i>
-                  </span>
-                            <span class="nav-text">Layouts</span>
-                        </a>
-                        <ul class="nav-sub">
-                            <li>
-                                <a href="headers.html" >
-                                    <span class="nav-text">Header</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="asides.html" >
-                                    <span class="nav-text">Aside</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="footers.html" >
-                                    <span class="nav-text">Footer</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="widget.html" >
-                  <span class="nav-icon">
-                    <i class="material-icons">&#xe8d2;
-                      <span ui-include="'../assets/images/i_3.svg'"></span>
-                    </i>
-                  </span>
-                            <span class="nav-text">Widgets</span>
-                        </a>
-                    </li>
+{{--                    <li>--}}
+{{--                        <a href="widget.html" >--}}
+{{--                            <span class="nav-icon">--}}
+{{--                                <i class="material-icons">&#xe8d2;--}}
+{{--                                    <span ui-include="'../assets/images/i_3.svg'"></span>--}}
+{{--                                </i>--}}
+{{--                            </span>--}}
+{{--                            <span class="nav-text">Widgets</span>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
 
                     <li class="nav-header hidden-folded">
                         <small class="text-muted">Components</small>
