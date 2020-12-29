@@ -9,7 +9,7 @@
                             <span class="text text-light">Beranda</span>
                         </a>
                     @else
-                        <a href="{{route('home')}}">
+                        <a href="{{route('dashboard')}}">
                             <span class="text text-light">Beranda</span>
                         </a>
                     @endguest
@@ -34,14 +34,14 @@
                 </li>
                 @guest
                 @else
-                    @if ($akun->status == 'mitra')
-                        <li class="el-megamenu el-megamenu-lg">
-                            <a href="#">
-                                <span class="text text-light">Ajukan Produk Anda</span>
-                                <i class="ti-angle-right hidden-lg-up"></i>
-                            </a>
-                        </li>
-                    @endif
+{{--                    @if ($akun->status == 'mitra')--}}
+{{--                        <li class="el-megamenu el-megamenu-lg">--}}
+{{--                            <a href="#">--}}
+{{--                                <span class="text text-light">Ajukan Produk Anda</span>--}}
+{{--                                <i class="ti-angle-right hidden-lg-up"></i>--}}
+{{--                            </a>--}}
+{{--                        </li>--}}
+{{--                    @endif--}}
                 @endguest
             </ul>
             <button class="button button-menu button-display-sidenav">
@@ -63,7 +63,7 @@
                         <img class="icon log-svg" src="{{asset('assets/images/icons/login.png')}}" alt="">
                         @guest
                         @else
-                            <label style="cursor: pointer" class="text-light font-weight-normal">{{$akun->username}}</label>
+                            <label style="cursor: pointer" class="text-light font-weight-normal">"{{$akun->username}}"</label>
                         @endguest
                     </button>
                     <i class="ti-angle-down hidden-lg-up"></i>
@@ -88,13 +88,13 @@
                                         <span class="text">{{__('Profile')}}</span>
                                     </a>
                                 </li>
-                                @if ($akun->status == 'mitra')
-                                    <li>
-                                        <a href="#">
-                                            <span>{{__('Riwayat Ajuan Produk')}}</span>
-                                        </a>
-                                    </li>
-                                @endif
+{{--                                @if ($akun->status == 'mitra')--}}
+{{--                                    <li>--}}
+{{--                                        <a href="#">--}}
+{{--                                            <span>{{__('Riwayat Ajuan Produk')}}</span>--}}
+{{--                                        </a>--}}
+{{--                                    </li>--}}
+{{--                                @endif--}}
                                 <li>
                                     <a href="#">{{__('Logout')}}</a>
                                 </li>

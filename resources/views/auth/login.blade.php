@@ -55,7 +55,7 @@
                     </div>
                 @endif
             </header>
-            <form class="form form-1" method="POST" action="{{route('login')}}">
+            <form class="form form-1" method="POST" action="{{route('auten')}}">
                 @csrf
                 <div class="row row-sm">
                     <div class="col-12">

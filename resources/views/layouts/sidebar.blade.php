@@ -23,13 +23,13 @@
                 </li>
                 @guest
                 @else
-                    @if ($akun->status == 'mitra')
-                        <li>
-                            <a href="#">
-                                <span class="text">Ajukan Produk Anda</span>
-                            </a>
-                        </li>
-                    @endif
+{{--                    @if ($akun->status == 'mitra')--}}
+{{--                        <li>--}}
+{{--                            <a href="#">--}}
+{{--                                <span class="text">Ajukan Produk Anda</span>--}}
+{{--                            </a>--}}
+{{--                        </li>--}}
+{{--                    @endif--}}
                 @endguest
             </ul>
         </div>

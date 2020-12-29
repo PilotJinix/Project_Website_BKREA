@@ -17,8 +17,12 @@
 */
 
 Route::get('/', 'DashboardController@index')->name('home');
+Route::get('/dashboard', 'DashboardController@passlog')->name('dashboard');
 Route::get('/login', 'Auth\LoginController@index')->name('login');
+Route::post('/auten', 'UsersController@auten')->name('auten');
+Route::get('/bye', 'UsersController@logout')->name('logout');
 Route::get('/register', 'Auth\LoginController@register')->name('register');
+Route::post('/create', 'UsersController@register')->name('create');
 
 Route::get('listbea', 'ListBeaController@index')->name('listbea');
 Route::get('detailbea', 'ListBeaController@detailbea')->name('detailbea');
