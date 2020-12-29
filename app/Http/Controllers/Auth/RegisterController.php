@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -68,5 +69,33 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+    }
+
+    public function index()
+    {
+        return view('auth\register');
+    }
+
+    public function register(Request $request){
+        $request->validate([
+            'nama_lengkap' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'username' => 'required|string|max:100|regex:/^\S*$/u|unique:users',
+            'nomer_hp' => 'required|string|max:15',
+            'alamat' => 'required|string|max:255',
+            'password' => 'required|string|min:8|confirmed',
+            'password_confirmation' => 'required',
+        ]);
+
+        User::create([
+            'nama_lengkap' => $request->nama_lengkap,
+            'username' => $request->username,
+            'email' => $request->email,
+            'nomer_hp' => $request->nomer_hp,
+            'alamat' => $request->alamat,
+            'password' => Hash::make($request->password),
+        ]);
+
+        return redirect('login')->with('success','Register Berhasil');
     }
 }

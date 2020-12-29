@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -42,8 +44,26 @@ class LoginController extends Controller
         return view('auth\login');
     }
 
-    public function register()
-    {
-        return view('auth\register');
+    public function auten(Request $request){
+        $request->validate([
+            'username' => 'required|string',
+            'password' => 'required|string',
+        ]);
+
+        $credentials = $request->only('username', 'password');
+
+        if (Auth::attempt($credentials)){
+            $request->session()->put('username', $request->username);
+            return redirect()->intended('dashboard');
+        }
+        return redirect('login')->with('error', 'Oppss! Silakan masukan data dengan benar');
     }
+
+    public function logout(Request $request) {
+        $request->session()->forget('username');
+        Auth::logout();
+
+        return redirect('login');
+    }
+
 }

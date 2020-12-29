@@ -63,7 +63,7 @@
                         <img class="icon log-svg" src="{{asset('assets/images/icons/login.png')}}" alt="">
                         @guest
                         @else
-                            <label style="cursor: pointer" class="text-light font-weight-normal">"{{$akun->username}}"</label>
+                            <label style="cursor: pointer" class="text-light font-weight-normal">{{$akun->username}}</label>
                         @endguest
                     </button>
                     <i class="ti-angle-down hidden-lg-up"></i>
