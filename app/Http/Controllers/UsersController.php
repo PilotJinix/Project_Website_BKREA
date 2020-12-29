@@ -9,7 +9,11 @@ use Illuminate\Support\Facades\DB;
 
 class UsersController extends Controller{
 
-    public function index(){
+    public function index(Request $request){
+        $session = $request->session()->get('username');
+        if($session != null){
+            return redirect()->route('dashboard');
+        }
         return view('dashboard');
     }
 
