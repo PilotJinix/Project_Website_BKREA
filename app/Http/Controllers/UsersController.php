@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\DB;
 
 class UsersController extends Controller{
 
+    public function index(){
+        return view('dashboard');
+    }
+
     public function passuser(Request $request){
         $session = $request->session()->get('username');
 

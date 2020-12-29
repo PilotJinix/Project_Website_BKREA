@@ -96,7 +96,7 @@
 {{--                                    </li>--}}
 {{--                                @endif--}}
                                 <li>
-                                    <a href="#">{{__('Logout')}}</a>
+                                    <a href="{{route('logout')}}">{{__('Logout')}}</a>
                                 </li>
                             @endguest
                         </ul>

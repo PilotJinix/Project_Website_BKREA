@@ -12,11 +12,9 @@
 */
 
 
-/*
-(------------------->>> Route Untuk User <<<-----------------------)
-*/
 
-Route::get('/', 'DashboardController@index')->name('home');
+
+Route::get('/', 'UsersController@index')->name('home');
 Route::get('/dashboard', 'UsersController@passuser')->name('dashboard');
 
 Route::get('/login', 'Auth\LoginController@index')->name('login');
@@ -34,9 +32,7 @@ Route::get('berita', 'BeritaController@index')->name('berita');
 Route::get('detailberita', 'BeritaController@detailberita')->name('detailberita');
 
 
-/*
-(------------------->>> Route Untuk admin <<<-----------------------)
-*/
+/*( Route Untuk Admin )*/
 
 //Route::get('/admin', 'DashboardAController@index')->name('homeadmin');
 Route::get('tesadmin', 'Admin\DashboardAController@index')->name('homeadmin');
