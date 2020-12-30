@@ -50,39 +50,9 @@
                 </li>
             </ul>
             <!-- / navbar right -->
-
-            <!-- navbar collapse -->
-            <div class="collapse navbar-toggleable-sm" id="collapse">
-                <div ui-include="'../views/blocks/navbar.form.right.html'"></div>
-                <!-- link and dropdown -->
-                <ul class="nav navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href data-toggle="dropdown">
-                            <span>Beasiwa Kreativ</span>
-                        </a>
-                        <div ui-include="'../views/blocks/dropdown.new.html'"></div>
-                    </li>
-                </ul>
-                <!-- / -->
-            </div>
-            <!-- / navbar collapse -->
-        </div>
-    </div>
-    <div class="app-footer">
-        <div class="p-a text-xs">
-            <div class="pull-right text-muted">
-                &copy; Copyright <strong>Flatkit</strong> <span class="hidden-xs-down">- Built with Love v1.1.3</span>
-                <a ui-scroll-to="content"><i class="fa fa-long-arrow-up p-x-sm"></i></a>
-            </div>
-            <div class="nav">
-                <a class="nav-link" href="http://flatfull.com/themes/flatkit/">About</a>
-                <span class="text-muted">-</span>
-                <a class="nav-link label accent" href="http://themeforest.net/user/flatfull/portfolio?ref=flatfull">Get it</a>
-            </div>
         </div>
     </div>
     <div ui-view class="app-body" id="view">
-
         <!-- ############ PAGE START-->
         <div class="padding">
             <div class="margin">
