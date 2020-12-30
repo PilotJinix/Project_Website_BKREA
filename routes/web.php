@@ -22,7 +22,7 @@ Route::post('/auten', 'Auth\LoginController@auten')->name('auten');
 Route::get('/bye', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/register', 'Auth\RegisterController@index')->name('register');
-Route::post('/create', 'UsersController@register')->name('create');
+Route::post('/create', 'Auth\RegisterController@register')->name('create');
 
 Route::get('listbea', 'ListBeaController@index')->name('listbea');
 Route::get('detailbea', 'ListBeaController@detailbea')->name('detailbea');

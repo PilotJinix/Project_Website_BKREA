@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c7f70338-50ac-4820-bc82-34aadcf2e4ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BeritaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BeritaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +171,8 @@
       <workItem from="1609148373451" duration="1171000" />
       <workItem from="1609180188161" duration="2064000" />
       <workItem from="1609208245430" duration="4720000" />
-      <workItem from="1609248734095" duration="7105000" />
+      <workItem from="1609248734095" duration="7992000" />
+      <workItem from="1609313356225" duration="2057000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1608579780706</created>
@@ -362,7 +363,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609264314255</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="seasion">
+      <created>1609265054722</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1609265054722</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
