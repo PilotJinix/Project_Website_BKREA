@@ -4,8 +4,7 @@
             <i class="fa fa-gear"></i>
         </a>
         <div class="box-header">
-            <a href="https://themeforest.net/item/flatkit-app-ui-kit/13231484?ref=flatfull" class="btn btn-xs rounded danger pull-right">BUY</a>
-            <h2>Theme Switcher</h2>
+            <h2>Ganti Tema</h2>
         </div>
         <div class="box-divider"></div>
         <div class="box-body">
@@ -13,10 +12,10 @@
                 <label class="md-check m-y-xs"  data-target="folded">
                     <input type="checkbox">
                     <i class="green"></i>
-                    <span class="hidden-folded">Folded Aside</span>
+                    <span class="hidden-folded">Perkecil Sidebar</span>
                 </label>
             </p>
-            <p>Themes:</p>
+            <p>Tema:</p>
             <div data-target="bg" class="text-u-c text-center _600 clearfix">
                 <label class="p-a col-xs-6 light pointer m-a-0">
                     <input type="radio" name="theme" value="" hidden>
