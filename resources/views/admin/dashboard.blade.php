@@ -28,7 +28,7 @@
                         <div class="col-xs-6">
                             <div class="box p-a">
                                 <div class="clear">
-                                    <div class="text-muted">Likes</div>
+                                    <div class="text-muted">Pengguna</div>
                                     <h4 class="m-a-0 text-md _600"><a href>7530</a></h4>
                                 </div>
                             </div>
@@ -36,7 +36,7 @@
                         <div class="col-xs-6">
                             <div class="box p-a">
                                 <div class="clear">
-                                    <div class="text-muted">Comments</div>
+                                    <div class="text-muted">Beasiswa</div>
                                     <h4 class="m-a-0 text-md _600"><a href>2980</a></h4>
                                 </div>
                             </div>
@@ -44,7 +44,7 @@
                         <div class="col-xs-6">
                             <div class="box p-a">
                                 <div class="clear">
-                                    <div class="text-muted">Photos</div>
+                                    <div class="text-muted">Permohonan</div>
                                     <h4 class="m-a-0 text-md _600"><a href>630</a></h4>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@
                         <div class="col-xs-6">
                             <div class="box p-a">
                                 <div class="clear">
-                                    <div class="text-muted">Videos</div>
+                                    <div class="text-muted">Berita</div>
                                     <h4 class="m-a-0 text-md _600"><a href>750</a></h4>
                                 </div>
                             </div>
@@ -63,11 +63,11 @@
                     <div class="row-col box dark bg">
                         <div class="col-sm-8 dker" style="height: 162px">
                             <div class="box-header">
-                                <h3>Reports</h3>
+                                <h3>Tambah Beasiswa</h3>
                             </div>
                             <div class="box-body">
-                                <p class="text-muted">Dales nisi nec adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis</p>
-                                <a href class="btn btn-sm btn-outline rounded b-success">Read More</a>
+                                <p class="text-muted">Tambah Beasiswa dengan mudah</p>
+                                <a href class="btn btn-sm btn-outline rounded b-success">Tambah Beasiswa</a>
                             </div>
                         </div>
                     </div>

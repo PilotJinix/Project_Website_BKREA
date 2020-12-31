@@ -22,7 +22,6 @@
             </li>
         </ul>
         <!-- / navbar right -->
-
         <!-- navbar collapse -->
         <!-- / navbar collapse -->
     </div>
