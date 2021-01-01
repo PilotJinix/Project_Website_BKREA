@@ -39,8 +39,8 @@
                         </a>
                         <ul class="nav-sub">
                             <li>
-                                <a href="inbox.html" >
-                                    <span class="nav-text">Inbox</span>
+                                <a href="{{route('tesadminlistbea')}}" >
+                                    <span class="nav-text">List Beasiswa</span>
                                 </a>
                             </li>
                             <li>
