@@ -7,7 +7,7 @@
         <div class="sidenav-body-inner">
             <ul class="menu">
                 <li>
-                    <a href="#">
+                    <a href="dashboard">
                         <span class="text">Beranda</span>
                     </a>
                 </li>
