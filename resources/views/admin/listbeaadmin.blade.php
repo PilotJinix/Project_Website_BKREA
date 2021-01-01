@@ -26,131 +26,25 @@
                     <table class="table table-striped b-t">
                         <thead>
                         <tr>
-                            <th>Project</th>
-                            <th>Task</th>
-                            <th>Date</th>
-                            <th style="width:50px;"></th>
+                            <th>Nama Lengkap</th>
+                            <th>Email</th>
+                            <th>No Telepon</th>
+                            <th>Alamat</th>
+                            <th>Actions</th>
                         </tr>
                         </thead>
                         <tbody>
+                        @foreach($data as $data)
                         <tr>
-                            <td>Idrawfast</td>
-                            <td>4c</td>
-                            <td>Jul 25, 2013</td>
+                            <td>{{__($data->nama_lengkap)}}</td>
+                            <td>{{__($data->email)}}</td>
+                            <td>{{__('+62'.$data->nomer_hp)}}</td>
+                            <td>{{__($data->alamat)}}</td>
                             <td>
-                                <div class="btn-group dropdown">
-                                    <button class="btn white dropdown-toggle" data-toggle="dropdown">Dropdown</button>
-                                    <div class="dropdown-menu dropdown-menu-scale">
-                                        <a class="dropdown-item" href>Action</a>
-                                        <a class="dropdown-item" href>Another action</a>
-                                        <a class="dropdown-item" href>Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item">Separated link</a>
-                                    </div>
-                                </div>
+                                <button class=" btn btn-sm rounded danger">Hapus</button>
                             </td>
                         </tr>
-                        <tr>
-                            <td>Formasa</td>
-                            <td>8c</td>
-                            <td>Jul 22, 2013</td>
-                            <td>
-                                <div class="btn-group dropdown">
-                                    <button class="btn white dropdown-toggle" data-toggle="dropdown">Dropdown</button>
-                                    <div class="dropdown-menu dropdown-menu-scale">
-                                        <a class="dropdown-item" href>Action</a>
-                                        <a class="dropdown-item" href>Another action</a>
-                                        <a class="dropdown-item" href>Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item">Separated link</a>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Avatar system</td>
-                            <td>15c</td>
-                            <td>Jul 15, 2013</td>
-                            <td>
-                                <div class="btn-group dropdown">
-                                    <button class="btn white dropdown-toggle" data-toggle="dropdown">Dropdown</button>
-                                    <div class="dropdown-menu dropdown-menu-scale">
-                                        <a class="dropdown-item" href>Action</a>
-                                        <a class="dropdown-item" href>Another action</a>
-                                        <a class="dropdown-item" href>Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item">Separated link</a>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Throwdown</td>
-                            <td>4c</td>
-                            <td>Jul 11, 2013</td>
-                            <td>
-                                <div class="btn-group dropdown">
-                                    <button class="btn white dropdown-toggle" data-toggle="dropdown">Dropdown</button>
-                                    <div class="dropdown-menu dropdown-menu-scale">
-                                        <a class="dropdown-item" href>Action</a>
-                                        <a class="dropdown-item" href>Another action</a>
-                                        <a class="dropdown-item" href>Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item">Separated link</a>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Idrawfast</td>
-                            <td>4c</td>
-                            <td>Jul 7, 2013</td>
-                            <td>
-                                <div class="btn-group dropdown">
-                                    <button class="btn white dropdown-toggle" data-toggle="dropdown">Dropdown</button>
-                                    <div class="dropdown-menu dropdown-menu-scale">
-                                        <a class="dropdown-item" href>Action</a>
-                                        <a class="dropdown-item" href>Another action</a>
-                                        <a class="dropdown-item" href>Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item">Separated link</a>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Formasa</td>
-                            <td>8c</td>
-                            <td>Jul 3, 2013</td>
-                            <td>
-                                <div class="btn-group dropdown">
-                                    <button class="btn white dropdown-toggle" data-toggle="dropdown">Dropdown</button>
-                                    <div class="dropdown-menu dropdown-menu-scale">
-                                        <a class="dropdown-item" href>Action</a>
-                                        <a class="dropdown-item" href>Another action</a>
-                                        <a class="dropdown-item" href>Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item">Separated link</a>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Avatar system</td>
-                            <td>15c</td>
-                            <td>Jul 2, 2013</td>
-                            <td>
-                                <a href class="active" ui-toggle-class><i class="fa fa-check text-success none"></i><i class="fa fa-times text-danger inline"></i></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Videodown</td>
-                            <td>4c</td>
-                            <td>Jul 1, 2013</td>
-                            <td>
-                                <a href class="active" ui-toggle-class><i class="fa fa-check text-success none"></i><i class="fa fa-times text-danger inline"></i></a>
-                            </td>
-                        </tr>
+                        @endforeach
                         </tbody>
                     </table>
                 </div>
@@ -167,6 +61,10 @@
                                 <li><a href>Next</a></li>
                             </ul>
                         </div>
+                        <div class="col-sm-4 text-center">
+                            <small class="text-muted inline m-t-sm m-b-sm">showing 20-30 of 50 items</small>
+                        </div>
+
                     </div>
                 </footer>
             </div>
