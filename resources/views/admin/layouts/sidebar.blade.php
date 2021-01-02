@@ -5,7 +5,7 @@
             <a class="navbar-brand">
                 <div ui-include="{{asset('admin/assets/images/logo.svg')}}"></div>
                 <img src="{{asset('admin/assets/images/logo.png')}}" alt="." >
-                <span class="hidden-folded inline">Flatkit</span>
+                <span class="hidden-folded inline">BKREA</span>
             </a>
             <!-- / brand -->
         </div>
@@ -13,7 +13,7 @@
             <nav class="scroll nav-active-primary">
                 <ul class="nav" ui-nav>
                     <li class="nav-header hidden-folded">
-                        <small class="text-muted">Main</small>
+                        <small class="text-muted">Menu</small>
                     </li>
                     <li>
                         <a href="{{route('homeadmin')}}" >

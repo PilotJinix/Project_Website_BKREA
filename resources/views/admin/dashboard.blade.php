@@ -61,10 +61,6 @@
                 <div class="box-header">
                     <h2>Daftar Akun User</h2>
                 </div>
-                <div class="col-xs-12">
-                    <button class="btn btn-outline b-primary text-primary" href="">Tambah Beasiswa</button>
-                </div>
-
                 <div class="table-responsive">
                     <table id="example" class="table table-striped b-t">
                         <thead>
