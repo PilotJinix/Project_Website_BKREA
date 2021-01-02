@@ -2,12 +2,13 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use DB;
+use Illuminate\Support\Facades\DB;
 
 class DashboardAController extends Controller
 {
     public function index(){
-        return view('admin.dashboard');
+        $data= DB::table('users')->latest()->get();
+        return view('admin.dashboard', compact('data'));
     }
 
 }
