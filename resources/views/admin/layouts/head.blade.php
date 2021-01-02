@@ -21,3 +21,10 @@
 <link rel="stylesheet" href="{{asset('admin/assets/bootstrap/dist/css/bootstrap.min.css')}}" type="text/css" />
 <link rel="stylesheet" href="{{asset('admin/assets/styles/app.min.css')}}">
 <link rel="stylesheet" href="{{asset('admin/assets/styles/font.css')}}" type="text/css" />
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
