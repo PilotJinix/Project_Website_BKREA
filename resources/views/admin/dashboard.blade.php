@@ -1,22 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    @section('title', 'Dashboard')
-    @include('admin.layouts.head')
-</head>
-<body>
-<!--Preloader-->
-@include('admin.layouts.navbar')
-@include('admin.layouts.sidebar')
-@include('admin.layouts.theme')
-<!--EndPreloader-->
-
-<!--Content-->
-
-<div id="content" class="app-content box-shadow-z0" role="main">
-    <div ui-view class="app-body" id="view">
-        <br><br><br>
-        <!-- ############ PAGE START-->
+@section('title', 'Dashboard')
+@extends('admin.layouts.head')
+@section('PAGE START')
         <div class="padding ">
             <div class="margin">
                 <h5 class="m-b-0 _300">Hi Jone, Welcome back</h5>
@@ -74,11 +58,5 @@
                 </div>
             </div>
         </div>
-        <!-- ############ PAGE END-->
-    </div>
-</div>
-<!--EndContent-->
+@endsection
 
-<script src="{{asset('admin/assets/scripts/app.html.js')}}"></script>
-</body>
-</html>
