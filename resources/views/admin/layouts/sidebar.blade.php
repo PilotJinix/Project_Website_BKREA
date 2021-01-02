@@ -16,7 +16,7 @@
                         <small class="text-muted">Main</small>
                     </li>
                     <li>
-                        <a href="dashboard.0.html" >
+                        <a href="{{route('homeadmin')}}" >
                             <span class="nav-icon">
                                 <i class="material-icons">&#xe3fc;
                                     <span ui-include="'../assets/images/i_0.svg'"></span>

@@ -20,8 +20,12 @@
         <div  class="padding">
             <div class="box">
                 <div class="box-header">
-                    <h3>Table with elements</h3>
+                    <h2>Table with elements</h2>
                 </div>
+                <div class="col-xs-12">
+                    <button class="btn btn-outline b-primary text-primary" href="">Tambah Beasiswa</button>
+                </div>
+
                 <div class="table-responsive">
                     <table id="example" class="table table-striped b-t">
                         <thead>
