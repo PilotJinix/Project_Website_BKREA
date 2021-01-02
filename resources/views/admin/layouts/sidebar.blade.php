@@ -45,12 +45,7 @@
                             </li>
                             <li>
                                 <a href="contact.html" >
-                                    <span class="nav-text">Contacts</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="calendar.html" >
-                                    <span class="nav-text">Calendar</span>
+                                    <span class="nav-text">Tambah Beasiswa</span>
                                 </a>
                             </li>
                         </ul>
@@ -69,18 +64,13 @@
                         </a>
                         <ul class="nav-sub">
                             <li>
-                                <a href="inbox.html" >
-                                    <span class="nav-text">Inbox</span>
+                                <a href="{{route('tesadminberita')}}" >
+                                    <span class="nav-text">List Berita</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="contact.html" >
-                                    <span class="nav-text">Contacts</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="calendar.html" >
-                                    <span class="nav-text">Calendar</span>
+                                    <span class="nav-text">Tambah Berita</span>
                                 </a>
                             </li>
                         </ul>
