@@ -16,6 +16,5 @@ class ListBeaController extends Controller{
         DB::table('users')->where('id',$id)->delete();
 
         return redirect()->route('tesadminlistbea','daftar-pengguna')->with('deleted','Akun berhasil dihapus');
-
     }
 }
