@@ -69,7 +69,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html" >
+                                <a href="{{route('tesadminpageberita')}}" >
                                     <span class="nav-text">Tambah Berita</span>
                                 </a>
                             </li>

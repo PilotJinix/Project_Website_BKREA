@@ -11,4 +11,9 @@ class ListBeritaController extends Controller{
         $data=DB::table('berita')->latest()->get();
         return view('admin.listberita', compact('data'));
     }
+
+    public function news(){
+//        $data=DB::table('berita')->latest()->get();
+        return view('admin.addberita');
+    }
 }
