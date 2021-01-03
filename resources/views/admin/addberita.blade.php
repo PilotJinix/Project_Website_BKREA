@@ -9,18 +9,18 @@
                     <div class="row row-sm">
                         <div class="col-sm-12">
                             <div class="md-form-group float-label">
-                                <input class="md-input" required>
+                                <input class="md-input" name="judul_artikel" required>
                                 <label>Judul</label>
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="md-form-group">
-                                <input type="file" class="md-input">
+                                <input type="file" class="md-input" name="gambar_artikel">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="md-form-group float-label">
-                                <textarea class="md-input" rows="15"></textarea>
+                                <textarea class="md-input" rows="15" name="deskripsi"></textarea>
                                 <label>Deskripsi</label>
                             </div>
                         </div>
