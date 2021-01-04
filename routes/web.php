@@ -40,9 +40,9 @@ Route::get('tesadmin', 'Admin\DashboardAController@index')->name('homeadmin');
 Route::get('tesadminlistbea', 'Admin\ListBeaController@index')->name('tesadminlistbea');
 Route::get('tesadminlistbea/akun/delete/{id}', 'Admin\ListBeaController@hapusakun')->name('deleteakun');
 
-Route::get('tesadminberita', 'Admin\ListBeritaController@index')->name('tesadminberita');
-Route::get('tesadminpageberita', 'Admin\ListBeritaController@news')->name('tesadminpageberita');
-Route::post('tesadminnewsaveberita', 'Admin\ListBeritaController@newSaved')->name('tesadminnewsaveberita');
+Route::get('Aberita', 'Admin\ListBeritaController@index')->name('Aberita');
+Route::get('Aberita/new', 'Admin\ListBeritaController@news')->name('new-berita');
+Route::post('Aberita/new/save', 'Admin\ListBeritaController@berita')->name('save-berita');
 
 
 

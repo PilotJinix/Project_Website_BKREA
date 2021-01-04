@@ -64,12 +64,12 @@
                         </a>
                         <ul class="nav-sub">
                             <li>
-                                <a href="{{route('tesadminberita')}}" >
+                                <a href="{{route('Aberita')}}" >
                                     <span class="nav-text">List Berita</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="{{route('tesadminpageberita')}}" >
+                                <a href="{{route('new-berita')}}" >
                                     <span class="nav-text">Tambah Berita</span>
                                 </a>
                             </li>

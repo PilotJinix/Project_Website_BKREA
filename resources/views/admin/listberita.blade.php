@@ -6,7 +6,7 @@
                 <h2>Table with elements</h2>
             </div>
             <div class="col-xs-12">
-                <a href="{{route('tesadminpageberita')}}" class="btn btn-outline b-primary text-primary">Tambah Berita</a>
+                <a href="{{route('new-berita')}}" class="btn btn-outline b-primary text-primary">Tambah Berita</a>
             </div>
 
             <div class="table-responsive">
@@ -20,9 +20,8 @@
                     <tbody>
                     @foreach($data as $data)
                         <tr>
-                            <td>{{__($data->nama_lengkap)}}</td>
+                            <td>{{__($data->judul)}}</td>
                             <td>
-
                                 <button class=" btn btn-sm rounded danger" data-toggle="modal" data-target={{__("#modal".$data->id)}}>
                                     Hapus
                                 </button>
@@ -37,7 +36,7 @@
                                         </h5>
                                     </div>
                                     <div class="modal-body text-center">
-                                        <p>{{__("Semua data akun ".$data->nama_lengkap." akan dihapus!")}}
+                                        <p>{{__("Semua data akun ".$data->judul." akan dihapus!")}}
                                         </p>
                                     </div>
                                     <div class="modal-footer">

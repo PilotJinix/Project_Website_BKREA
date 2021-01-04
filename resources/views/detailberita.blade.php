@@ -41,7 +41,7 @@
 {{--    @include('layouts.cartlist')--}}
 {{--</div>--}}
 <!--/-->
-<!--Blog-->
+<!--Berita-->
 <section class="section section-single-post section-single-post-1">
     <div class="display-spacing display-spacing-plus">
         <div class="container">
