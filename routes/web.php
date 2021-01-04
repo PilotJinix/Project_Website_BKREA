@@ -43,8 +43,7 @@ Route::get('tesadminlistbea/akun/delete/{id}', 'Admin\ListBeaController@hapusaku
 Route::get('Aberita', 'Admin\ListBeritaController@index')->name('Aberita');
 Route::get('Aberita/new', 'Admin\ListBeritaController@news')->name('new-berita');
 Route::post('Aberita/new/save', 'Admin\ListBeritaController@berita')->name('save-berita');
-
-
+Route::get('Aberita/new/delete/{id}', 'Admin\ListBeritaController@delete')->name('hapus-berita');
 
 
 

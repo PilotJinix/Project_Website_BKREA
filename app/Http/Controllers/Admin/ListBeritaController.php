@@ -31,11 +31,10 @@ class ListBeritaController extends Controller{
             'deskripsi' => 'required|string'
         ]);
 
-        $tujuan_upload = "storage/berita";
+        $tujuan_upload = "public/berita/";
         $file = $request->file('gambar_artikel');
         $file_name = time()."_".$file->getClientOriginalName();
-        $request ->file('gambar_artikel')->store($tujuan_upload.$file_name);
-////        $img = Image::make($file->getRealPath());
+        $request ->file('gambar_artikel')->store($tujuan_upload);
 
         Berita::create([
             'judul' => $request->judul_artikel,
@@ -45,4 +44,11 @@ class ListBeritaController extends Controller{
 
         return view('admin.listberita', compact('data'));
     }
+
+    public function delete(Request $request, $id){
+        DB::table('berita')->where('id',$id)->delete();
+        return redirect()->route('Aberita','berita')->with('deleted','Berita berhasil dihapus');
+    }
+
+
 }

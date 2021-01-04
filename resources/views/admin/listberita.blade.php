@@ -40,7 +40,7 @@
                                         </p>
                                     </div>
                                     <div class="modal-footer">
-                                        <a href="{{route('deleteakun',$data->id)}}">
+                                        <a href="{{route('hapus-berita',$data->id)}}">
                                             <button type="button" class="btn btn-info ">Konfirmasi</button>
                                         </a>
                                         <button type="button" class="btn btn-danger waves-effect"

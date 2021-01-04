@@ -10,7 +10,7 @@
                     <div class="row row-sm">
                         <div class="col-sm-12">
                             <div class="md-form-group float-label">
-                                <input type="text" class="md-input" name="judul_artikel" >
+                                <input type="text" class="md-input" name="judul_artikel" required>
                                 <label>Judul</label>
                             </div>
                         </div>
@@ -19,7 +19,7 @@
                         @enderror
                         <div class="col-sm-12 m-t-2">
                             <div class="md-form-group">
-                                <input type="file" class="md-input" name="gambar_artikel">
+                                <input type="file" class="md-input" name="gambar_artikel" required>
                                 <label>Deskripsi</label>
                             </div>
                         </div>
@@ -28,7 +28,7 @@
                         @enderror
                         <div class="col-sm-12">
                             <div class="md-form-group float-label">
-                                <textarea class="md-input" rows="15" name="deskripsi"></textarea>
+                                <textarea class="md-input" rows="15" name="deskripsi" required></textarea>
                                 <label>Deskripsi</label>
                             </div>
                         </div>
