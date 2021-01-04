@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Blog;
 use App\Http\Controllers\Controller;
+use Faker\Provider\Image;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
@@ -43,9 +44,11 @@ class ListBeritaController extends Controller{
         ]);
 
         /** Change resoluution image and save to path **/
+//        $request ->file('gambar_artikel')->store($this->berita);
+//        $img->resize(600,400)->save($tujuan_upload.$file_name);
         $img->resize(600,400)->save($tujuan_upload.$file_name);
 
-        return redirect()->route('admin.artikel')->with('saved','Artikel baru berhasil ditambahkan!');
+        return redirect()->route('admin.tesadminberita')->with('saved','Artikel baru berhasil ditambahkan!');
 
     }
 }

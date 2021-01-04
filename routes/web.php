@@ -42,6 +42,7 @@ Route::get('tesadminlistbea/akun/delete/{id}', 'Admin\ListBeaController@hapusaku
 
 Route::get('tesadminberita', 'Admin\ListBeritaController@index')->name('tesadminberita');
 Route::get('tesadminpageberita', 'Admin\ListBeritaController@news')->name('tesadminpageberita');
+Route::post('tesadminnewsaveberita', 'Admin\ListBeritaController@newSaved')->name('tesadminnewsaveberita');
 
 
 
