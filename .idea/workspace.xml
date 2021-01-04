@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7f70338-50ac-4820-bc82-34aadcf2e4ba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ListBeritaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ListBeritaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/addberita.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addberita.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/listberita.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/listberita.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,14 +180,7 @@
       <workItem from="1609681654050" duration="7949000" />
       <workItem from="1609731604133" duration="10900000" />
       <workItem from="1609751103348" duration="5465000" />
-      <workItem from="1609763184391" duration="11864000" />
-    </task>
-    <task id="LOCAL-00002" summary="up">
-      <created>1608579907371</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1608579907371</updated>
+      <workItem from="1609763184391" duration="12165000" />
     </task>
     <task id="LOCAL-00003" summary="Perbaikan Navbar">
       <created>1608638872537</created>
@@ -529,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609771922488</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="List Bea admin">
+      <created>1609784647433</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1609784647433</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

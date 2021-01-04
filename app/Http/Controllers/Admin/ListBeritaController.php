@@ -15,6 +15,7 @@ class ListBeritaController extends Controller{
     public function index(){
         $data=DB::table('berita')->latest()->get();
         $pages = "berita";
+//        return redirect()->route('Aberita')->with('deleted','Berita berhasil dihapus');
         return view('admin.listberita', compact('data', 'pages'));
     }
 
