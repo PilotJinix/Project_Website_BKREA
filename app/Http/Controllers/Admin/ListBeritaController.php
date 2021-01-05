@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
+
 class ListBeritaController extends Controller{
 
     public $berita ="storage/berita";
@@ -43,6 +44,25 @@ class ListBeritaController extends Controller{
             'deskripsi' => $request->deskripsi,
         ]);
         return redirect()->route('Aberita')->with(compact('data'));
+    }
+
+    public function edit(Request $request, $id){
+        $data = DB::table('berita')->where('id',$id)->first();
+        return view('admin.editberita', compact('data'));
+    }
+
+    public function saveEdit(Request $request, $id){
+        $request->validate([
+            'judul_artikel' => 'required|string',
+            'deskripsi' => 'required|string',
+        ]);
+
+        DB::table('berita')->where('id',$id)->update([
+            'judul' => $request->judul_artikel,
+            'deskripsi' => $request->deskripsi,
+        ]);
+
+        return redirect()->route('Aberita')->with('changed','Artikel berhasil diperbaharui!');
     }
 
     public function delete(Request $request, $id){
