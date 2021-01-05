@@ -8,7 +8,11 @@ class DashboardAController extends Controller
 {
     public function index(){
         $data= DB::table('users')->latest()->get();
-        return view('admin.dashboard', compact('data'));
+        $data_user= DB::table('users')->latest()->count();
+        $data_berita= DB::table('berita')->latest()->count();
+        $data_beasiswa= DB::table('beasiswa')->latest()->count();
+        $data_pemohon= DB::table('ajuan_pemohon')->latest()->count();
+        return view('admin.dashboard', compact('data', 'data_user', 'data_berita', 'data_beasiswa', 'data_pemohon'));
     }
 
 }

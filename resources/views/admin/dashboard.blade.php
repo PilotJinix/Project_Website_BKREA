@@ -13,7 +13,7 @@
                             <div class="box p-a">
                                 <div class="clear">
                                     <div class="text-muted">Pengguna</div>
-                                    <h4 class="m-a-0 text-md _600"><a href>7530</a></h4>
+                                    <h4 class="m-a-0 text-md _600">{!!$data_user!!}</h4>
                                 </div>
                             </div>
                         </div>
@@ -21,7 +21,7 @@
                             <div class="box p-a">
                                 <div class="clear">
                                     <div class="text-muted">Beasiswa</div>
-                                    <h4 class="m-a-0 text-md _600"><a href>2980</a></h4>
+                                    <h4 class="m-a-0 text-md _600">{!! $data_beasiswa !!}</h4>
                                 </div>
                             </div>
                         </div>
@@ -29,7 +29,7 @@
                             <div class="box p-a">
                                 <div class="clear">
                                     <div class="text-muted">Permohonan</div>
-                                    <h4 class="m-a-0 text-md _600"><a href>630</a></h4>
+                                    <h4 class="m-a-0 text-md _600">{!! $data_pemohon !!}</h4>
                                 </div>
                             </div>
                         </div>
@@ -37,7 +37,7 @@
                             <div class="box p-a">
                                 <div class="clear">
                                     <div class="text-muted">Berita</div>
-                                    <h4 class="m-a-0 text-md _600"><a href>750</a></h4>
+                                    <h4 class="m-a-0 text-md _600">{!! $data_berita !!}</h4>
                                 </div>
                             </div>
                         </div>

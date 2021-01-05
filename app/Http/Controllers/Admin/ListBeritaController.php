@@ -42,8 +42,7 @@ class ListBeritaController extends Controller{
             'gambar' => $file_name,
             'deskripsi' => $request->deskripsi,
         ]);
-
-        return view('admin.listberita', compact('data'));
+        return redirect()->route('Aberita')->with(compact('data'));
     }
 
     public function delete(Request $request, $id){

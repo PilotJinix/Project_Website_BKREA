@@ -31,6 +31,7 @@
 </head>
 <body>
 <!--Preloader-->
+
 @include('admin.layouts.navbar')
 @include('admin.layouts.sidebar')
 @include('admin.layouts.theme')

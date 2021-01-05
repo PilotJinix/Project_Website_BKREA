@@ -35,7 +35,7 @@ Route::get('detailberita', 'BeritaController@detailberita')->name('detailberita'
 /*( Route Untuk Admin )*/
 
 //Route::get('/admin', 'DashboardAController@index')->name('homeadmin');
-Route::get('tesadmin', 'Admin\DashboardAController@index')->name('homeadmin');
+Route::get('homeadmin', 'Admin\DashboardAController@index')->name('homeadmin');
 
 Route::get('tesadminlistbea', 'Admin\ListBeaController@index')->name('tesadminlistbea');
 Route::get('tesadminlistbea/akun/delete/{id}', 'Admin\ListBeaController@hapusakun')->name('deleteakun');

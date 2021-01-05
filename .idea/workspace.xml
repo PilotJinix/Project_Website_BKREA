@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7f70338-50ac-4820-bc82-34aadcf2e4ba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardAController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardAController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ListBeritaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ListBeritaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/head.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,14 +185,8 @@
       <workItem from="1609681654050" duration="7949000" />
       <workItem from="1609731604133" duration="10900000" />
       <workItem from="1609751103348" duration="5465000" />
-      <workItem from="1609763184391" duration="12165000" />
-    </task>
-    <task id="LOCAL-00003" summary="Perbaikan Navbar">
-      <created>1608638872537</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1608638872537</updated>
+      <workItem from="1609763184391" duration="13681000" />
+      <workItem from="1609859817367" duration="4819000" />
     </task>
     <task id="LOCAL-00004" summary="Perbaikan Navbar">
       <created>1608641401606</created>
@@ -525,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609784647433</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="List Berita admin">
+      <created>1609785248866</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1609785248866</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,6 +549,7 @@
     <MESSAGE value="make database" />
     <MESSAGE value="seasion" />
     <MESSAGE value="List Bea admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="List Bea admin" />
+    <MESSAGE value="List Berita admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="List Berita admin" />
   </component>
 </project>
