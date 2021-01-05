@@ -81,7 +81,7 @@
                                 <td>{{__($data->alamat)}}</td>
                                 <td>
 
-                                    <button class=" btn btn-sm rounded danger" data-toggle="modal" data-target={{__("#modal".$data->id)}}>
+                                    <button class=" btn btn-sm danger" data-toggle="modal" data-target={{__("#modal".$data->id)}}>
                                         Hapus
                                     </button>
                                 </td>

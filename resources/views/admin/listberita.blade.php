@@ -13,7 +13,7 @@
                 <table id="example" class="table table-striped b-t">
                     <thead>
                     <tr>
-                        <th>Judul</th>
+                        <th width="80%">Judul</th>
                         <th>Actions</th>
                     </tr>
                     </thead>
@@ -22,7 +22,9 @@
                         <tr>
                             <td>{{__($data->judul)}}</td>
                             <td>
-                                <button class=" btn btn-sm rounded danger" data-toggle="modal" data-target={{__("#modal".$data->id)}}>
+                                <a href="#" class=" btn btn-sm primary">Baca Selengkapnya</a>
+                                <a href="#" class=" btn btn-sm warn">Edit</a>
+                                <button class=" btn btn-sm danger" data-toggle="modal" data-target={{__("#modal".$data->id)}}>
                                     Hapus
                                 </button>
                             </td>
