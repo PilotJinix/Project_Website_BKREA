@@ -88,28 +88,16 @@
                                     <span class="var">Kuota</span>
                                     <span class="val">{{__($data->kuota)}}</span>
                                 </li>
-{{--                                <li>--}}
-{{--                                    <span class="var">{{__('Kategori')}}</span>--}}
-{{--                                    <span class="val">{{__('Beasiswa')}}</span>--}}
-{{--                                </li>--}}
                             </ul>
                         </div>
                         <form action="{{route('lanjutisi')}}" method="get">
                             <div class="row row-0">
                                 <div class="col-12 mt-3">
-{{--                                    @if ($product->stok == 0)--}}
-{{--                                        <button class="button button-md button-block text-center" disabled--}}
-{{--                                                style="background-color: #888888" type="button">--}}
-{{--                                            <span class="ti-bag text-light"></span>--}}
-{{--                                            <span class="text-light">BELI</span>--}}
-{{--                                        </button>--}}
-{{--                                    @else--}}
                                         <button class="button button-md button-block button-dark text-center"
                                                 type="submit">
                                             <span class="ti-bag"></span>
-                                            <span class="text">BELI</span>
+                                            <span class="text">Daftar Sekarang</span>
                                         </button>
-{{--                                    @endif--}}
                                 </div>
                             </div>
                         </form>

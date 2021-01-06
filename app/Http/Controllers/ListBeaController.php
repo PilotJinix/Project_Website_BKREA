@@ -27,7 +27,19 @@ class ListBeaController extends Controller
         return view('detailbea', compact('data'));
     }
 
-    public function lanjutisi(){
-        return view('applybea');
+    public function lanjutisi(Request $request){
+        $user = $request->session()->get('username');
+        if ($user != null) {
+            $akun = DB::table('users')->where('username',$user)->first();
+
+            return view('applybea', compact('akun'));
+        }
+        return view('auth.login');
     }
 }
+
+
+
+
+
+
