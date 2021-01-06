@@ -49,13 +49,6 @@
             </button>
         </div>
         <div class="col-md-4 text-right">
-            @guest
-            @else
-                <button type="button" class="button button-icon button-icon-cart button-display-shopping-cart">
-                    <img class="icon" src="{{asset("assets/images/icons/shopping-cart-light.svg")}}"
-                         alt="--Alternative--" />
-                </button>
-            @endguest
             <ul class="log-in-out" style="height: 100%;">
                 <li class="el-megamenu el-megamenu-xs align-content-center"
                     style="line-height: 0!important; height: 60px;">
@@ -75,13 +68,11 @@
                                         <span class="text">Login</span>
                                     </a>
                                 </li>
-{{--                                @if (Route::has('register'))--}}
                                     <li>
                                         <a href="{{route('register')}}">
                                             <span class="text">Register</span>
                                         </a>
                                     </li>
-{{--                                @endif--}}
                             @else
                                 <li>
                                     <a href="#">

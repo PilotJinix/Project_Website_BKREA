@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-    @section('title', 'Berita')
+    @section('title', 'Riwayat Pemohon')
     @include('layouts.head')
 </head>
 
@@ -45,7 +45,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-right">
-                        <h1>Berita Terbaru</h1>
+                        <h1>Riwayat Anda</h1>
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                         <ul class="el-breadcrumbs el-breadcrumbs-1 text-light">
