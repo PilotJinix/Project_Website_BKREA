@@ -2,6 +2,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class DashboardAController extends Controller
@@ -13,6 +14,11 @@ class DashboardAController extends Controller
         $data_beasiswa= DB::table('beasiswa')->latest()->count();
         $data_pemohon= DB::table('ajuan_pemohon')->latest()->count();
         return view('admin.dashboard', compact('data', 'data_user', 'data_berita', 'data_beasiswa', 'data_pemohon'));
+    }
+
+    public function hapus(Request $request, $id){
+        DB::table('users')->where('id',$id)->delete();
+        return redirect()->route('homeadmin')->with('deleted','Akun berhasil dihapus');
     }
 
 }

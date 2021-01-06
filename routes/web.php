@@ -36,6 +36,7 @@ Route::get('detailberita/{id}', 'BeritaController@detailberita')->name('detailbe
 
 //Route::get('/admin', 'DashboardAController@index')->name('homeadmin');
 Route::get('homeadmin', 'Admin\DashboardAController@index')->name('homeadmin');
+Route::get('homeadmin/akun/delete/{id}', 'Admin\DashboardAController@hapus')->name('deleteakun');
 
 Route::get('Abeasiswa', 'Admin\ListBeaController@index')->name('Abeasiswa');
 Route::get('Abeasiswa/bea', 'Admin\ListBeaController@news')->name('new-beasiswa');
