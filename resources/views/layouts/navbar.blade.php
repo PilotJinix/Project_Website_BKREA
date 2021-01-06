@@ -29,7 +29,7 @@
                 @guest
                     @else
                     <li class="el-megamenu el-megamenu-lg">
-                        <a href="{{route('homeadmin')}}">
+                        <a href="{{route('riwayat')}}">
                             <span class="text text-light">Riwayat Permohonan</span>
                             <i class="ti-angle-right hidden-lg-up"></i>
                         </a>

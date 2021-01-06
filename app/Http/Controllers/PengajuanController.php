@@ -8,28 +8,20 @@ use Illuminate\Support\Facades\DB;
 
 class PengajuanController extends Controller
 {
-    public function create(Request $request){
-        $data=DB::table('ajuan_pemohon')->latest()->get();
-        $request->validate([
-            'nama_pemohon' => 'required|string',
-            'data' => 'required|file|mimes:zip|max:10000',
-            "email" => 'required|string',
-            "no_hp" => 'required|string',
-        ]);
+    public function index(Request $request){
+        $user = $request->session()->get('username');
+        if ($user != null) {
+            $akun = DB::table('users')->where('username',$user)->first();
+            $pengguna =$akun->id;
 
-        $tujuan_upload = "public/data/";
-        $file = $request->file('data');
-        $file_name = time()."_".$file->getClientOriginalName();
-        $request ->file('data')->storeAs($tujuan_upload,$file_name);
-
-        Beasiswa::create([
-            'nama_pemohon' => $request->nama_pemohon,
-            'email_pemohon' => $request->email,
-            'no_hp_pemohon' => $request->no_hp,
-            'data_pemohon' => $file_name,
-        ]);
-
-        return redirect()->route('listbea')->with(compact('data'));
+            $riwayat = DB::table('ajuan_pemohon')
+                ->join('beasiswa','ajuan_pemohon.beasiswa_id', '=', 'beasiswa.id')
+                ->where('ajuan_pemohon.user_id', '=', $pengguna)->select('ajuan_pemohon.*','beasiswa.nama_beasiswa', 'beasiswa.gambar', 'beasiswa.deskripsi')->latest()
+                ->get();
+//            return var_dump($pengguna);
+            return view('listriwayat', compact('akun', 'riwayat'));
+        }
+        return view('listriwayat');
     }
 
 }
