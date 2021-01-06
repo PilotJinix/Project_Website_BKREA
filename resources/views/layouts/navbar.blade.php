@@ -26,22 +26,22 @@
                         <i class="ti-angle-right hidden-lg-up"></i>
                     </a>
                 </li>
-                <li class="el-megamenu el-megamenu-lg">
-                    <a href="{{route('homeadmin')}}">
-                        <span class="text text-light">Berita</span>
-                        <i class="ti-angle-right hidden-lg-up"></i>
-                    </a>
-                </li>
                 @guest
-                @else
-{{--                    @if ($akun->status == 'mitra')--}}
-{{--                        <li class="el-megamenu el-megamenu-lg">--}}
-{{--                            <a href="#">--}}
-{{--                                <span class="text text-light">Ajukan Produk Anda</span>--}}
-{{--                                <i class="ti-angle-right hidden-lg-up"></i>--}}
-{{--                            </a>--}}
-{{--                        </li>--}}
-{{--                    @endif--}}
+                    @else
+                    <li class="el-megamenu el-megamenu-lg">
+                        <a href="{{route('homeadmin')}}">
+                            <span class="text text-light">Riwayat Permohonan</span>
+                            <i class="ti-angle-right hidden-lg-up"></i>
+                        </a>
+                    </li>
+                @endguest
+                @guest
+                    <li class="el-megamenu el-megamenu-lg">
+                        <a href="{{route('homeadmin')}}">
+                            <span class="text text-light">Admin</span>
+                            <i class="ti-angle-right hidden-lg-up"></i>
+                        </a>
+                    </li>
                 @endguest
             </ul>
             <button class="button button-menu button-display-sidenav">
