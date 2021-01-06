@@ -179,21 +179,7 @@
       <workItem from="1609731604133" duration="10900000" />
       <workItem from="1609751103348" duration="5465000" />
       <workItem from="1609763184391" duration="13681000" />
-      <workItem from="1609859817367" duration="53774000" />
-    </task>
-    <task id="LOCAL-00022" summary="asset admin">
-      <created>1609075650098</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1609075650099</updated>
-    </task>
-    <task id="LOCAL-00023" summary="make database">
-      <created>1609081975166</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1609081975166</updated>
+      <workItem from="1609859817367" duration="54102000" />
     </task>
     <task id="LOCAL-00024" summary="make database">
       <created>1609082337194</created>
@@ -524,7 +510,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609957149850</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="bea done">
+      <created>1609957850595</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1609957850595</updated>
+    </task>
+    <task id="LOCAL-00072" summary="bea done">
+      <created>1609957889392</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1609957889392</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

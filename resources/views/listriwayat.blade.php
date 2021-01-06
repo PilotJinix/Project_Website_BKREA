@@ -56,7 +56,7 @@
                             </li>
                             <li>
                                 <a href="#" class="active">
-                                    <span class="text">Berita</span>
+                                    <span class="text">Riwayat Permohonan</span>
                                 </a>
                             </li>
                         </ul>
