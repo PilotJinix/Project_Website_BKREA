@@ -36,7 +36,7 @@ class ListBeritaController extends Controller{
         $tujuan_upload = "public/berita/";
         $file = $request->file('gambar_artikel');
         $file_name = time()."_".$file->getClientOriginalName();
-        $request ->file('gambar_artikel')->store($tujuan_upload);
+        $request ->file('gambar_artikel')->storeAs($tujuan_upload,$file_name);
 
         Berita::create([
             'judul' => $request->judul_artikel,

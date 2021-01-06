@@ -20,7 +20,6 @@
                     <tbody>
                     @foreach($data as $data)
                         <tr>
-{{--                            <td>{!! Str::word($data->judul, 7, '...') !!}</td>--}}
                             <td>{!! \Illuminate\Support\Str::substr($data->judul,0,60) !!}</td>
                             <td>
                                 <a href="#" class=" btn btn-sm primary">Baca Selengkapnya</a>

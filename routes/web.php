@@ -29,7 +29,7 @@ Route::get('detailbea', 'ListBeaController@detailbea')->name('detailbea');
 Route::get('lanjutisi', 'ListBeaController@lanjutisi')->name('lanjutisi');
 
 Route::get('berita', 'BeritaController@index')->name('berita');
-Route::get('detailberita', 'BeritaController@detailberita')->name('detailberita');
+Route::get('detailberita/{id}', 'BeritaController@detailberita')->name('detailberita');
 
 
 /*( Route Untuk Admin )*/
