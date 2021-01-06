@@ -179,14 +179,7 @@
       <workItem from="1609731604133" duration="10900000" />
       <workItem from="1609751103348" duration="5465000" />
       <workItem from="1609763184391" duration="13681000" />
-      <workItem from="1609859817367" duration="54102000" />
-    </task>
-    <task id="LOCAL-00024" summary="make database">
-      <created>1609082337194</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1609082337194</updated>
+      <workItem from="1609859817367" duration="54526000" />
     </task>
     <task id="LOCAL-00025" summary="seasion">
       <created>1609252448273</created>
@@ -524,7 +517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609957889392</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="bea done">
+      <created>1609958037397</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1609958037397</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
