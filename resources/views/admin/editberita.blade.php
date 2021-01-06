@@ -1,4 +1,4 @@
-@section('title', 'Dashboard')
+@section('title', 'Berita')
 @extends('admin.layouts.head')
 @section('PAGE START')
     <div class="padding">

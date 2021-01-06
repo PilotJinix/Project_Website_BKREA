@@ -1,8 +1,8 @@
-@section('title', 'Dashboard')
+@section('title', 'Beasiswa')
 @extends('admin.layouts.head')
 @section('PAGE START')
     <div class="padding">
-        <h3 class="_600 m-v-lg">Tambah Berita</h3>
+        <h3 class="_600 m-v-lg">Tambah Beasiswa</h3>
         <form action="{{route('save-beasiswa')}}" method="post" enctype="multipart/form-data">
             @csrf
             <div class="m-b-lg row">

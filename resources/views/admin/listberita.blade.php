@@ -1,9 +1,10 @@
+@section('title', 'Berita')
 @extends('admin.layouts.head')
 @section('PAGE START')
     <div  class="padding">
         <div class="box">
             <div class="box-header">
-                <h2>Table with elements</h2>
+                <h2>Tabel Data Beasiswa</h2>
             </div>
             <div class="col-xs-12">
                 <a href="{{route('new-berita')}}" class="btn btn-outline b-primary text-primary">Tambah Berita</a>

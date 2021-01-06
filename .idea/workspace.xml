@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7f70338-50ac-4820-bc82-34aadcf2e4ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/editbea.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ListBeaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ListBeaController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/addbeaadmin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addbeaadmin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/addberita.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addberita.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/editbea.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/editbea.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/editberita.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/editberita.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/listbeaadmin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/listbeaadmin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/listberita.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/listberita.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,14 +187,7 @@
       <workItem from="1609731604133" duration="10900000" />
       <workItem from="1609751103348" duration="5465000" />
       <workItem from="1609763184391" duration="13681000" />
-      <workItem from="1609859817367" duration="21874000" />
-    </task>
-    <task id="LOCAL-00010" summary="routing">
-      <created>1608665198312</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1608665198312</updated>
+      <workItem from="1609859817367" duration="22647000" />
     </task>
     <task id="LOCAL-00011" summary="routing">
       <created>1608665834848</created>
@@ -533,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609910703195</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="firt bea">
+      <created>1609916144999</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1609916144999</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
