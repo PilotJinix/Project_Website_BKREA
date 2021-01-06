@@ -43,12 +43,14 @@
             <div class="row row-sm">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
                     <div class="el-panel">
+                        @foreach($data as $dataa)
                         <div class="el-panel-body">
                             <div class="el-panel-title">
-                                <h3>Frequently Asked Questions</h3>
+                                <h3>{{__($dataa->nama_beasiswa)}}</h3>
                             </div>
-                            <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+                            <p>{{__($dataa->deskripsi)}}</p>
                         </div>
+                        @endforeach
                     </div>
                     <div class="items pt-15">
                         <!--Accordion-->
@@ -56,7 +58,7 @@
                             <div class="el-accordion-head">
                                 <div class="inner d-flex align-items-center">
                                     <div class="accordion-image">
-                                        <img src="assets/images/icons/click.svg" alt="Click me">
+                                        <img src="{{asset('assets/images/icons/click.svg')}}" alt="Click me">
                                     </div>
                                     <div class="accordion-title">
                                         <h4>How do I apply to teach on Eduline?</h4>
@@ -73,116 +75,6 @@
                             </div>
                         </div>
                         <!--/-->
-                        <!--Accordion-->
-                        <div class="el-accordion">
-                            <div class="el-accordion-head">
-                                <div class="inner d-flex align-items-center">
-                                    <div class="accordion-image">
-                                        <img src="assets/images/icons/click.svg" alt="Click me">
-                                    </div>
-                                    <div class="accordion-title">
-                                        <h4>Do I need teaching experience?</h4>
-                                    </div>
-                                    <div class="accordion-arrow">
-                                        <div class="display-center">
-                                            <span class="fa fa-angle-down"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="el-accordion-body">
-                                <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
-                            </div>
-                        </div>
-                        <!--/-->
-                        <!--Accordion-->
-                        <div class="el-accordion">
-                            <div class="el-accordion-head">
-                                <div class="inner d-flex align-items-center">
-                                    <div class="accordion-image">
-                                        <img src="assets/images/icons/click.svg" alt="Click me">
-                                    </div>
-                                    <div class="accordion-title">
-                                        <h4>Can I teach more than one language?</h4>
-                                    </div>
-                                    <div class="accordion-arrow">
-                                        <div class="display-center">
-                                            <span class="fa fa-angle-down"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="el-accordion-body">
-                                <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
-                            </div>
-                        </div>
-                        <!--/-->
-                        <!--Accordion-->
-                        <div class="el-accordion">
-                            <div class="el-accordion-head">
-                                <div class="inner d-flex align-items-center">
-                                    <div class="accordion-image">
-                                        <img src="assets/images/icons/click.svg" alt="Click me">
-                                    </div>
-                                    <div class="accordion-title">
-                                        <h4>How much can I expect to earn from private lessons?</h4>
-                                    </div>
-                                    <div class="accordion-arrow">
-                                        <div class="display-center">
-                                            <span class="fa fa-angle-down"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="el-accordion-body">
-                                <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
-                            </div>
-                        </div>
-                        <!--/-->
-                        <!--Accordion-->
-                        <div class="el-accordion">
-                            <div class="el-accordion-head">
-                                <div class="inner d-flex align-items-center">
-                                    <div class="accordion-image">
-                                        <img src="assets/images/icons/click.svg" alt="Click me">
-                                    </div>
-                                    <div class="accordion-title">
-                                        <h4>As a teacher, how do I receive payment?</h4>
-                                    </div>
-                                    <div class="accordion-arrow">
-                                        <div class="display-center">
-                                            <span class="fa fa-angle-down"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="el-accordion-body">
-                                <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
-                            </div>
-                        </div>
-                        <!--/-->
-                        <!--Accordion-->
-                        <div class="el-accordion">
-                            <div class="el-accordion-head">
-                                <div class="inner d-flex align-items-center">
-                                    <div class="accordion-image">
-                                        <img src="assets/images/icons/click.svg" alt="Click me">
-                                    </div>
-                                    <div class="accordion-title">
-                                        <h4>How much can I expect to earn from private lessons?</h4>
-                                    </div>
-                                    <div class="accordion-arrow">
-                                        <div class="display-center">
-                                            <span class="fa fa-angle-down"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="el-accordion-body">
-                                <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
-                            </div>
-                        </div>
-                        <!--/-->
                     </div>
                 </div>
                 <!--Sidebar-->
@@ -191,7 +83,7 @@
                     <div class="el-panel el-panel-teacher-info">
                         <div class="el-panel-body">
                             <div class="post-image">
-                                <img src="#" alt="--Alternative--">
+                                <img src="{{asset('storage/beasiswa/'.$dataa->gambar)}}" alt="--Alternative--">
                                 <a href="#" class="button button-read-more">
                                 </a>
                             </div>
@@ -206,14 +98,7 @@
 </section>
 <!--/-->
 <!--Footer-->
-<footer class="app-footer app-footer-1">
-    <div class="footer-copyright">
-        <div class="container">
-            <p><span class="text-bold">WGFARM</span> organic and wellness.</p>
-            <p class="text-2">© 2020 All Rights Reserved</p>
-        </div>
-    </div>
-</footer>
+
 <!--/-->
 
 <!--Scripts-->

@@ -18,10 +18,32 @@ class PengajuanController extends Controller
                 ->join('beasiswa','ajuan_pemohon.beasiswa_id', '=', 'beasiswa.id')
                 ->where('ajuan_pemohon.user_id', '=', $pengguna)->select('ajuan_pemohon.*','beasiswa.nama_beasiswa', 'beasiswa.gambar', 'beasiswa.deskripsi')->latest()
                 ->get();
-//            return var_dump($pengguna);
             return view('listriwayat', compact('akun', 'riwayat'));
         }
         return view('listriwayat');
+    }
+
+    public function detail(Request $request, $id){
+        $user = $request->session()->get('username');
+        $akun = DB::table('users')->where('username',$user)->first();
+        $pengguna =$akun->id;
+
+        $riwayat = DB::table('ajuan_pemohon')
+            ->join('beasiswa','ajuan_pemohon.beasiswa_id', '=', 'beasiswa.id')
+            ->where('ajuan_pemohon.user_id', '=', $pengguna)->select('ajuan_pemohon.*','beasiswa.nama_beasiswa', 'beasiswa.gambar', 'beasiswa.deskripsi')->latest()
+            ->get();
+
+        $data1 = DB::table('ajuan_pemohon')
+            ->join('beasiswa', 'ajuan_pemohon.beasiswa_id','=','beasiswa.id')
+            ->where('ajuan_pemohon.id','=','beasiswa.id')->select('nama_beasiswa', 'deskripsi')
+            ->get();
+
+        $data = DB::table('beasiswa')
+            ->join('ajuan_pemohon', 'ajuan_pemohon.beasiswa_id','=','beasiswa.id')
+            ->where('ajuan_pemohon.id','=',$id)
+            ->get();
+//        return dd($detail);
+        return view('riwayat', compact('akun','riwayat', 'data'));
     }
 
 }

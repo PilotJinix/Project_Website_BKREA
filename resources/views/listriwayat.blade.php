@@ -78,13 +78,13 @@
                         <div class="el-card el-card-blog el-card-blog-1 el-hover">
                             <div class="post-image">
                                 <img src="{{asset('storage/beasiswa/'.$data->gambar)}}" alt="--Alternative--">
-                                <a href="{{route('detailberita',$data->id)}}" class="button button-read-more">
+                                <a href="{{route('detailriwayat',$data->id)}}" class="button button-read-more">
                                     <span class="text">Read More</span>
                                 </a>
                             </div>
                             <div class="details">
                                 <h3>
-                                    <a href="{{route('detailberita', $data->id)}}" title="Fila Locker Room Varsity Jacket">
+                                    <a href="{{route('detailriwayat', $data->id)}}" title="Fila Locker Room Varsity Jacket">
                                         <span class="text">{{__($data->nama_beasiswa)}}</span>
                                     </a>
                                 </h3>

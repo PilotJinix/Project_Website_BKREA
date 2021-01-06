@@ -33,6 +33,7 @@ Route::get('berita', 'BeritaController@index')->name('berita');
 Route::get('detailberita/{id}', 'BeritaController@detailberita')->name('detailberita');
 
 Route::get('riwayat', 'PengajuanController@index')->name('riwayat');
+Route::get('riwayat/{id}', 'PengajuanController@detail')->name('detailriwayat');
 
 
 /*( Route Untuk Admin )*/
