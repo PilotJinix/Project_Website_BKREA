@@ -39,7 +39,7 @@
                         </a>
                         <ul class="nav-sub">
                             <li>
-                                <a href="{{route('tesadminlistbea')}}" >
+                                <a href="{{route('Abeasiswa')}}" >
                                     <span class="nav-text">List Beasiswa</span>
                                 </a>
                             </li>

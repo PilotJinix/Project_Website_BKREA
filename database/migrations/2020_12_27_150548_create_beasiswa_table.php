@@ -20,7 +20,7 @@ class CreateBeasiswaTable extends Migration
             $table->string('gambar');
             $table->string('kuota');
             $table->string('deskripsi');
-            $table->string('status');
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }
