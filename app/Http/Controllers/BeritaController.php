@@ -11,7 +11,7 @@ class BeritaController extends Controller
         if ($user != null) {
             $akun = DB::table('users')->where('username',$user)->first();
 
-            return view('berita', compact('akun'));
+            return view('berita', compact('akun','data'));
         }
         return view('berita', compact('data'));
     }
