@@ -86,7 +86,7 @@
 <section class="section section-page section-checkout section-checkout-1">
     <div class="page-body">
         <div class="display-spacing">
-            <form action="#" class="form-3">
+            <form action="{{route('create-ajuan',$data->id)}}" class="form-3" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="container">
                     <div class="row row-sm">
@@ -100,9 +100,9 @@
                                     <div class="form-item">
                                         <label>Nama Lengkap*</label>
                                         <input type="text" class="mt-2 @error('nama_lengkap') is invalid @enderror"
-                                               name="nama_lengkap" value="{{__($akun->nama_lengkap)}}" />
+                                               name="nama_pemohon" value="{{__($akun->nama_lengkap)}}" />
                                     </div>
-                                    @error('nama_lengkap')
+                                    @error('nama_pemohon')
                                     <span class="text-danger invalid-feedback" role="alert">
                                             <strong>{{' $message '}}</strong>
                                         </span>
@@ -133,82 +133,19 @@
                                         </span>
                                     @enderror
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="form-item">
-                                        <label>Alamat*</label>
-                                        <textarea name="alamat" id="alamat" cols="10" rows="3"
-                                                  placeholder="isi dengan nama jalan, nomor rumah, nomor kompleks, nama gedung, lantai atau nomor unit"></textarea>
-                                    </div>
-                                    @error('alamat')
-                                    <span class="text-danger invalid-feedback" role="alert">
-                                            <strong>{{' $message '}}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
                                 <div class="col-12">
                                     <div class="form-item">
-                                        <label>apartemen,toko,dll(opsional)</label>
-                                        <input type="text" class="mt-2 @error('label_alamat') is invalid @enderror"
-                                               name="label_alamat" />
+                                        <label>Upload data .rar</label>
+                                        <div class="rounded" style="border: 1px solid #e1e1e1;padding: 13px;border-radius: 5px">
+                                            <input type="file" class="@error('ktp') is fail @enderror"
+                                                   style="cursor: pointer;border: none" name="data">
+                                        </div>
+                                        <label style="color: gray">(Max data = 10MB )</label>
                                     </div>
-                                    @error('label_alamat')
+                                    @error('data')
                                     <span class="text-danger invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-item">
-                                        <label>Provinsi*</label>
-                                        <select name="provinsi" id="provinsi" class="js-states form-control"
-                                                style="width: 100%;" onchange="handleKota()">
-                                            <option selected disabled>Pilih Provinsi</option>
-                                        </select>
-                                    </div>
-                                    @error('provinsi')
-                                    <span class="text-danger invalid-feedback" role="alert">
-                                            <strong>{{' $message '}}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-item">
-                                        <label>Kota*</label>
-                                        <select name="kota" id="kota" class="form-control" style="width: 100%;"
-                                                onchange="handleKec()">
-                                            <option selected disabled>Pilih Kota</option>
-                                        </select>
-                                    </div>
-                                    @error('kota')
-                                    <span class="text-danger invalid-feedback" role="alert">
-                                            <strong>{{' $message '}}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-item">
-                                        <label>Kecamatan*</label>
-                                        <select name="kecamatan" id="kecamatan" class="form-control"
-                                                style="width: 100%;" onchange="hargaPengiriman()">
-                                            <option selected disabled>Pilih Kecamatan</option>
-                                        </select>
-                                    </div>
-                                    @error('kecamatan')
-                                    <span class="text-danger invalid-feedback" role="alert">
-                                            <strong>{{' $message '}}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-item">
-                                        <label>Kode Pos*</label>
-                                        <input type="number" name="kode_pos"
-                                               class="mt-2 @error('kode_pos') is invalid @enderror" />
-                                    </div>
-                                    @error('kode_pos')
-                                    <span class="text-danger invalid-feedback" role="alert">
-                                            <strong>{{' $message '}}</strong>
-                                        </span>
+                                        <strong>{{ $message }}</strong>
+                                    </span>
                                     @enderror
                                 </div>
                             </div>
@@ -257,213 +194,12 @@
         </div>
     </div>
 </footer>
-
-{{--@guest--}}
-{{--    <div class="pos-fixed">--}}
-{{--        <div class="option">--}}
-{{--            <div class="option-header">--}}
-{{--                <span class="text-title">Ooppps!</span>--}}
-{{--            </div>--}}
-{{--            <div class="option-body">--}}
-{{--                <p>Maaf, Kamu harus login terlebih dahulu!!</p>--}}
-{{--            </div>--}}
-{{--            <div class="btn-option pr-3">--}}
-{{--                <a class="button button-primary rounded" href="#"--}}
-{{--                   style="padding: 0 20px"><span>Login</span></a>--}}
-{{--                <a class="button button-secondary rounded" href="{{url()->previous()}}"--}}
-{{--                   style="padding: 0 20px"><span>Kembali</span></a>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--@endguest--}}
 <!--Scripts-->
 <script src="{{asset("assets/js/jquery.min.js")}}"></script>
 <script src="{{asset('assets/js/plugins.min.js')}}"></script>
 <script src="{{asset('assets/js/main-scripts.js')}}"></script>
 <script src="{{asset('assets/js/custom.js')}}"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
-{{-- <script src="{{asset('assets/js/demo.js"')}}"></script> --}}
-{{--<script>--}}
-{{--    $(document).ready(function () {--}}
-
-{{--        $("#provinsi").select2({--}}
-{{--            placeholder: "Pilih Provinsi",--}}
-{{--        });--}}
-{{--        $("#kota").select2({--}}
-{{--            placeholder: "Pilih Kota",--}}
-{{--        });--}}
-{{--        $("#kecamatan").select2({--}}
-{{--            placeholder: "Pilih Kecamatan",--}}
-{{--        });--}}
-{{--        /* Pilih Metode Pembayaran */--}}
-{{--        $('#pilih-metode').click(function () {--}}
-{{--            $('#metode-pembayaran').fadeIn();--}}
-{{--        });--}}
-{{--        $('#bca').click(function () {--}}
-{{--            $('#bank').val($('#bca').text());--}}
-
-{{--            $('#metode-pembayaran').fadeOut();--}}
-{{--            if ($('#bank').val() != '') {--}}
-{{--                $('#button-submit').prop('disabled', false);--}}
-{{--            };--}}
-{{--        });--}}
-{{--        $('#bri').click(function () {--}}
-{{--            $('#bank').val($('#bri').text());--}}
-
-{{--            $('#metode-pembayaran').fadeOut();--}}
-{{--            if ($('#bank').val() != '') {--}}
-{{--                $('#button-submit').prop('disabled', false);--}}
-{{--            };--}}
-{{--        });--}}
-{{--        $('#mandiri').click(function () {--}}
-{{--            $('#bank').val($('#mandiri').text());--}}
-
-{{--            $('#metode-pembayaran').fadeOut();--}}
-{{--            if ($('#bank').val() != '') {--}}
-{{--                $('#button-submit').prop('disabled', false);--}}
-{{--            };--}}
-{{--        });--}}
-{{--        $('#closeModalBank').click(function () {--}}
-{{--            $('#metode-pembayaran').fadeOut();--}}
-{{--        });--}}
-{{--        $('#kurir').change(function () {--}}
-{{--            let harga = $('#harga').val();--}}
-{{--            let jumlah = $('#jumlah').val();--}}
-{{--            let kurir = $('#kurir').val();--}}
-
-{{--            let hoo = $(this).children("option:selected").text();--}}
-{{--            console.log(hoo);--}}
-
-{{--            $('#courier').val(hoo);--}}
-
-{{--            $('.biaya').val(kurir);--}}
-{{--            let biaya_kirim = $('#biaya_pengiriman').val();--}}
-{{--            let diskon = $('#diskon').val();--}}
-{{--            let hasil_diskon = diskon / 100 * harga;--}}
-{{--            let harga_diskon = harga - hasil_diskon;--}}
-{{--            let kirim = Number(biaya_kirim);--}}
-{{--            let total = harga_diskon * jumlah + kirim;--}}
-
-{{--            $('#total-harga').val(total);--}}
-{{--        });--}}
-
-{{--        /* Jumlah */--}}
-{{--        let harga = $('#harga').val();--}}
-{{--        let jumlah = $("#jumlah").val();--}}
-{{--        let diskon = $('#diskon').val();--}}
-{{--        let hasil_diskon = diskon / 100 * harga;--}}
-{{--        let harga_diskon = harga - hasil_diskon;--}}
-{{--        let total = harga_diskon * jumlah;--}}
-{{--        $('#total-harga').val(total);--}}
-
-{{--        /* button submit */--}}
-{{--        $('#button-submit').prop('disabled', true);--}}
-{{--    })--}}
-
-{{--    const url = "https://ruangapi.com/api/v1/provinces";--}}
-
-{{--    let res = fetch(url, {--}}
-{{--        headers: {--}}
-{{--            "authorization": "gTHTyyFbX4kAbAydtjVMgquqGUXbtH1FX7XZrSl9",--}}
-{{--            "content-type": "application/json"--}}
-{{--        },--}}
-{{--    }).then(response => response.json())--}}
-{{--        .then(json => provinces(json))--}}
-{{--        .catch(err => console.log(err));--}}
-
-{{--    function provinces(data) {--}}
-{{--        console.log(data.data.results);--}}
-{{--        let item = data.data.results;--}}
-{{--        for (let i = 0; i < item.length; i++) {--}}
-{{--            $('#provinsi').append(new Option(item[i].name, item[i].id));--}}
-{{--        }--}}
-{{--    }--}}
-
-{{--    async function handleKota() {--}}
-{{--        let provinsi = $('#provinsi').val();--}}
-
-{{--        const kotaUrl = `https://ruangapi.com/api/v1/cities?province=${provinsi}`;--}}
-
-{{--        let res = await fetch(kotaUrl, {--}}
-{{--            headers: {--}}
-{{--                "authorization": "gTHTyyFbX4kAbAydtjVMgquqGUXbtH1FX7XZrSl9",--}}
-{{--                "content-type": "application/json"--}}
-{{--            },--}}
-{{--        }).then(response => response.json())--}}
-{{--            .catch(err => console.log(err));--}}
-
-{{--        let item = res.data.results;--}}
-{{--        console.log(item);--}}
-{{--        for (let i = 0; i < item.length; i++) {--}}
-{{--            $('#kota').append(new Option(item[i].name, item[i].id));--}}
-{{--        }--}}
-{{--    }--}}
-
-{{--    async function handleKec() {--}}
-{{--        let kota = $("#kota").val();--}}
-
-{{--        const kecUrl = `https://ruangapi.com/api/v1/districts?city=${kota}`;--}}
-
-{{--        const res = await fetch(kecUrl, {--}}
-{{--            headers: {--}}
-{{--                "authorization": "gTHTyyFbX4kAbAydtjVMgquqGUXbtH1FX7XZrSl9",--}}
-{{--                "content-type": "application/json"--}}
-{{--            },--}}
-{{--        }).then(response => response.json())--}}
-{{--            .catch(err => console.log(err));--}}
-
-{{--        let item = res.data.results;--}}
-{{--        console.log(item);--}}
-{{--        for (let i = 0; i < item.length; i++) {--}}
-{{--            $('#kecamatan').append(new Option(item[i].name, item[i].id));--}}
-{{--        };--}}
-{{--    }--}}
-
-{{--    async function hargaPengiriman() {--}}
-{{--        const courier = [--}}
-{{--            'jnt',--}}
-{{--            'tiki',--}}
-{{--            'sicepat',--}}
-{{--        ];--}}
-{{--        let kec = $("#kecamatan").val();--}}
-{{--        let kurir = $("#kurir").val();--}}
-{{--        let jumlah = $("#jumlah").val();--}}
-{{--        const asal = 289;--}}
-{{--        let berat = jumlah * 1000;--}}
-
-{{--        for (let j = 0; j < courier.length; j++) {--}}
-{{--            let data = {--}}
-{{--                'origin': asal,--}}
-{{--                'destination': kec,--}}
-{{--                'weight': berat,--}}
-{{--                'courier': courier[j],--}}
-{{--            };--}}
-
-{{--            const ongkos = "https://ruangapi.com/api/v1/shipping";--}}
-
-{{--            const res = await fetch(ongkos, {--}}
-{{--                method: 'POST',--}}
-{{--                headers: {--}}
-{{--                    "authorization": "gTHTyyFbX4kAbAydtjVMgquqGUXbtH1FX7XZrSl9",--}}
-{{--                    "content-type": "application/json"--}}
-{{--                },--}}
-{{--                body: JSON.stringify(data)--}}
-{{--            }).then(response => response.json())--}}
-{{--                .catch(err => console.log(err));--}}
-
-{{--            let jasa = res.data.results;--}}
-{{--            console.log(jasa);--}}
-{{--            if (jasa.length != 0) {--}}
-{{--                for (let index = 0; index < jasa.length; index++) {--}}
-{{--                    $('#kurir').append(new Option(jasa[index].courier +--}}
-{{--                        "-" + jasa[index].description, jasa[index].cost));--}}
-{{--                }--}}
-{{--            }--}}
-{{--        }--}}
-{{--    }--}}
-
-{{--</script>--}}
-<!--/-->
 </body>
 
 </html>
