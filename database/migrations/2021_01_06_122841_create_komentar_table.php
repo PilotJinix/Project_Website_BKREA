@@ -18,8 +18,8 @@ class CreateKomentarTable extends Migration
             $table->string('komentar');
             $table->bigInteger('user_id')->unsigned();
             $table->bigInteger('beasiswa_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
-            $table->foreign('beasiswa_id')->references('id')->on('beasiswa')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('user_id')->references('user_id')->on('ajuan_pemohon')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('beasiswa_id')->references('beasiswa_id')->on('ajuan_pemohon')->onDelete('cascade')->onUpdate('cascade');
 
             $table->timestamps();
         });

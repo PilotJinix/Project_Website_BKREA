@@ -179,32 +179,32 @@
         <div class="container">
             <header class="el-heading el-heading-1 center">
                 <h2>Daftar Beasiswa</h2>
-                <p>Ayo pesen sebelum kehabisan</p>
+                <p>Ayo Daftar Kawan Kawan</p>
             </header>
             <div class="el-data-filters">
                 <div class="el-data-filters-content">
                     <ul class="row row-sm justify-content-md-center">
                         <!--Item-->
-{{--                        @foreach ($product as $item)--}}
+                        @foreach ($data as $dataa)
                         <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                             <div class="el-card el-card-blog el-card-blog-1 el-hover">
                                 <div class="post-image">
-                                    <img src="assets/images/blog/1-2.jpg" alt="--Alternative--">
-                                    <a href="blog-single-post-2.html" class="button button-read-more">
+                                    <img src="{{asset('storage/beasiswa/'.$dataa->gambar)}}" alt="--Alternative--">
+                                    <a href="{{route('detailbea',$dataa->id)}}" class="button button-read-more">
                                         <span class="text">Read More</span>
                                     </a>
                                 </div>
                                 <div class="details">
                                     <h3>
-                                        <a href="blog-single-post-2.html" title="Fila Locker Room Varsity Jacket">
-                                            <span class="text">Blogging for business? Here’s everything you need to know.</span>
+                                        <a href="{{route('detailbea',$dataa->id)}}" title="Fila Locker Room Varsity Jacket">
+                                            <span class="text">{{__($dataa->nama_beasiswa)}}</span>
                                         </a>
                                     </h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p>{{__($dataa->deskripsi)}}</p>
                                 </div>
                             </div>
                         </div>
-{{--                    @endforeach--}}
+                    @endforeach
                     <!--/-->
                     </ul>
                 </div>

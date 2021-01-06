@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7f70338-50ac-4820-bc82-34aadcf2e4ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Ajuan.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PengajuanController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ListBeaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ListBeaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/applybea.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/applybea.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_06_122841_create_komentar_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_06_122841_create_komentar_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,14 +184,7 @@
       <workItem from="1609731604133" duration="10900000" />
       <workItem from="1609751103348" duration="5465000" />
       <workItem from="1609763184391" duration="13681000" />
-      <workItem from="1609859817367" duration="40367000" />
-    </task>
-    <task id="LOCAL-00017" summary="asset admin">
-      <created>1608981916006</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1608981916006</updated>
+      <workItem from="1609859817367" duration="44173000" />
     </task>
     <task id="LOCAL-00018" summary="asset admin">
       <created>1608986460986</created>
@@ -531,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609936458569</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="bea done">
+      <created>1609942257908</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1609942257908</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

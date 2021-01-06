@@ -11,20 +11,21 @@ class UsersController extends Controller{
 
     public function index(Request $request){
         $session = $request->session()->get('username');
+        $data=DB::table('beasiswa')->latest()->get();
         if($session != null){
-            return redirect()->route('dashboard');
+            return redirect()->route('dashboard', compact('data'));
         }
-        return view('dashboard');
+        return view('dashboard', compact('data'));
     }
 
     public function passuser(Request $request){
         $session = $request->session()->get('username');
-
+        $data=DB::table('beasiswa')->latest()->get();
         if ($session == null) {
-            return redirect()->route('home');
+            return redirect()->route('home', compact('data'));
         }
         $akun = DB::table('users')->where('username',$session)->first();
 
-        return view('dashboard', compact('akun'));
+        return view('dashboard', compact('akun', 'data'));
     }
 }
