@@ -76,13 +76,6 @@
                                         <span class="text">{{__('Profile')}}</span>
                                     </a>
                                 </li>
-{{--                                @if ($akun->status == 'mitra')--}}
-{{--                                    <li>--}}
-{{--                                        <a href="#">--}}
-{{--                                            <span>{{__('Riwayat Ajuan Produk')}}</span>--}}
-{{--                                        </a>--}}
-{{--                                    </li>--}}
-{{--                                @endif--}}
                                 <li>
                                     <a href="{{route('logout')}}">{{__('Logout')}}</a>
                                 </li>
