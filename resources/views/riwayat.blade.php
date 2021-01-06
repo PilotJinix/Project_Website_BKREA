@@ -61,7 +61,7 @@
                                         <img src="{{asset('assets/images/icons/click.svg')}}" alt="Click me">
                                     </div>
                                     <div class="accordion-title">
-                                        <h4>How do I apply to teach on Eduline?</h4>
+                                        <h4>Silahkan Masukkan Foto buku Rekening dan Nomer Rekening</h4>
                                     </div>
                                     <div class="accordion-arrow">
                                         <div class="display-center">
