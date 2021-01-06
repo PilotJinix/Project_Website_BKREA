@@ -51,7 +51,7 @@
                             </div>
                             <div class="box-body">
                                 <p class="text-muted">Tambah Beasiswa dengan mudah</p>
-                                <a href="{{route('Abeasiswa')}}" class="btn btn-sm btn-outline rounded b-success">Tambah Beasiswa</a>
+                                <a href="{{route('new-beasiswa')}}" class="btn btn-sm btn-outline rounded b-success">Tambah Beasiswa</a>
                             </div>
                         </div>
                     </div>

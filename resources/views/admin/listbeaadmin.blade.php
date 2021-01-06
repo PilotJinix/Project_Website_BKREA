@@ -6,30 +6,29 @@
                 <h2>Table with elements</h2>
             </div>
             <div class="col-xs-12">
-                <button class="btn btn-outline b-primary text-primary" href="">Tambah Beasiswa</button>
+                <a href="{{route('new-beasiswa')}}" class="btn btn-outline b-primary text-primary">Tambah Beasiswa</a>
             </div>
 
             <div class="table-responsive">
                 <table id="example" class="table table-striped b-t">
                     <thead>
                     <tr>
-                        <th>Nama Lengkap</th>
-                        <th>Email</th>
-                        <th>No Telepon</th>
-                        <th>Alamat</th>
+                        <th>Nama Beasiswa</th>
+                        <th>Kuota</th>
+                        <th>Terakhir diubah</th>
                         <th>Actions</th>
                     </tr>
                     </thead>
                     <tbody>
                     @foreach($data as $data)
                         <tr>
-                            <td>{{__($data->nama_lengkap)}}</td>
-                            <td>{{__($data->email)}}</td>
-                            <td>{{__('+62'.$data->nomer_hp)}}</td>
-                            <td>{{__($data->alamat)}}</td>
+                            <td width="50%">{!! \Illuminate\Support\Str::substr($data->nama_beasiswa,0,60) !!}</td>
+                            <td>{{__($data->kuota)}}</td>
+                            <td>{{__($data->updated_at)}}</td>
                             <td>
-
-                                <button class=" btn btn-sm rounded danger" data-toggle="modal" data-target={{__("#modal".$data->id)}}>
+                                <a href="#" class=" btn btn-sm primary">Baca Selengkapnya</a>
+                                <a href="{{route('edit-beasiswa',$data->id)}}" class=" btn btn-sm warn">Edit</a>
+                                <button class=" btn btn-sm danger" data-toggle="modal" data-target={{__("#modal".$data->id)}}>
                                     Hapus
                                 </button>
                             </td>
@@ -43,11 +42,11 @@
                                         </h5>
                                     </div>
                                     <div class="modal-body text-center">
-                                        <p>{{__("Semua data akun ".$data->nama_lengkap." akan dihapus!")}}
+                                        <p>{{__("Semua data akun ".$data->nama_beasiswa." akan dihapus!")}}
                                         </p>
                                     </div>
                                     <div class="modal-footer">
-                                        <a href="{{route('deleteakun',$data->id)}}">
+                                        <a href="{{route('deletebeasiwa',$data->id)}}">
                                             <button type="button" class="btn btn-info ">Konfirmasi</button>
                                         </a>
                                         <button type="button" class="btn btn-danger waves-effect"

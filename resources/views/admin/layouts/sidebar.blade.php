@@ -44,7 +44,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html" >
+                                <a href="{{route('new-beasiswa')}}" >
                                     <span class="nav-text">Tambah Beasiswa</span>
                                 </a>
                             </li>

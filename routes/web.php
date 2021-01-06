@@ -38,7 +38,11 @@ Route::get('detailberita/{id}', 'BeritaController@detailberita')->name('detailbe
 Route::get('homeadmin', 'Admin\DashboardAController@index')->name('homeadmin');
 
 Route::get('Abeasiswa', 'Admin\ListBeaController@index')->name('Abeasiswa');
-Route::get('Abeasiswa/akun/delete/{id}', 'Admin\ListBeaController@hapusakun')->name('deletebeasiwa');
+Route::get('Abeasiswa/bea', 'Admin\ListBeaController@news')->name('new-beasiswa');
+Route::post('Abeasiswa/bea/save', 'Admin\ListBeaController@beasiswa')->name('save-beasiswa');
+Route::post('Abeasiswa/save-edit/{id}', 'Admin\ListBeaController@saveEdit')->name('saveEditbea');
+Route::get('Abeasiswa/new/edit/{id}', 'Admin\ListBeaController@edit')->name('edit-beasiswa');
+Route::get('Abeasiswa/akun/delete/{id}', 'Admin\ListBeaController@hapus')->name('deletebeasiwa');
 
 Route::get('Aberita', 'Admin\ListBeritaController@index')->name('Aberita');
 Route::get('Aberita/new', 'Admin\ListBeritaController@news')->name('new-berita');
