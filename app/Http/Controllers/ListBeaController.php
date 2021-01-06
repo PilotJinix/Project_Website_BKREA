@@ -27,12 +27,13 @@ class ListBeaController extends Controller
         return view('detailbea', compact('data'));
     }
 
-    public function lanjutisi(Request $request){
+    public function lanjutisi(Request $request, $id){
         $user = $request->session()->get('username');
+        $data = DB::table('beasiswa')->where('id', $id)->first();
         if ($user != null) {
             $akun = DB::table('users')->where('username',$user)->first();
 
-            return view('applybea', compact('akun'));
+            return view('applybea', compact('akun','data'));
         }
         return view('auth.login');
     }

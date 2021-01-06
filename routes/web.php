@@ -26,7 +26,7 @@ Route::post('/create', 'Auth\RegisterController@register')->name('create');
 
 Route::get('listbea', 'ListBeaController@index')->name('listbea');
 Route::get('detailbea/{id}', 'ListBeaController@detailbea')->name('detailbea');
-Route::get('lanjutisi', 'ListBeaController@lanjutisi')->name('lanjutisi');
+Route::get('lanjutisi/{id}', 'ListBeaController@lanjutisi')->name('lanjutisi');
 
 Route::get('berita', 'BeritaController@index')->name('berita');
 Route::get('detailberita/{id}', 'BeritaController@detailberita')->name('detailberita');

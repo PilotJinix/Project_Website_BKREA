@@ -90,7 +90,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <form action="{{route('lanjutisi')}}" method="get">
+                        <form action="{{route('lanjutisi', ['id'=>$data->id])}}" method="get">
                             <div class="row row-0">
                                 <div class="col-12 mt-3">
                                         <button class="button button-md button-block button-dark text-center"

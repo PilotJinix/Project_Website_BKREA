@@ -60,7 +60,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-right">
-                        <h1>Checkout</h1>
+                        <h1>Form Pengajuan</h1>
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                         <ul class="el-breadcrumbs el-breadcrumbs-1 text-light">
@@ -71,7 +71,7 @@
                             </li>
                             <li>
                                 <a href="#" class="active">
-                                    <span class="text">Checkout</span>
+                                    <span class="text">Form Pengajuan</span>
                                 </a>
                             </li>
                         </ul>
@@ -92,7 +92,7 @@
                     <div class="row row-sm">
                         <div class="col-lg-8">
                             <header class="el-heading el-heading-3">
-                                <h2>Billing Details</h2>
+                                <h2>Form Pengajuan</h2>
                                 <div class="divider divider-line"></div>
                             </header>
                             <div class="row row-sm">
@@ -100,7 +100,7 @@
                                     <div class="form-item">
                                         <label>Nama Lengkap*</label>
                                         <input type="text" class="mt-2 @error('nama_lengkap') is invalid @enderror"
-                                               name="nama_lengkap" value="{{__('$akun->nama_lengkap')}}" />
+                                               name="nama_lengkap" value="{{__($akun->nama_lengkap)}}" />
                                     </div>
                                     @error('nama_lengkap')
                                     <span class="text-danger invalid-feedback" role="alert">
@@ -112,7 +112,7 @@
                                     <div class="form-item">
                                         <label>Email*</label>
                                         <input type="text" class="mt-2 @error('email') is invalid @enderror"
-                                               name="email" value="{{__('$akun->email')}}" />
+                                               name="email" value="{{__($akun->email)}}" />
 
                                     </div>
                                     @error('email')
@@ -125,7 +125,7 @@
                                     <div class="form-item">
                                         <label>Nomer HP*</label>
                                         <input type="number" class="mt-2 @error('no_hp') is invalid @enderror"
-                                               name="no_hp" value="{{__('$akun->nomer_hp')}}" />
+                                               name="no_hp" value="{{__($akun->nomer_hp)}}" />
                                     </div>
                                     @error('no_hp')
                                     <span class="text-danger invalid-feedback" role="alert">
@@ -215,34 +215,20 @@
                         </div>
                         <div class="col-lg-4">
                             <header class="el-heading el-heading-3">
-                                <h2>Order Details</h2>
+                                <h2>Beasiswa</h2>
                                 <div class="divider divider-line"></div>
                             </header>
                             <div class="el-table-order el-table-order-1">
                                 <ul>
                                     <li>
-                                        <span class="var">Product</span>
                                         <ul class="pl-0">
                                             <li class="p-3" style="border: 1px solid #e3e3e3; border-radius: 5px">
                                                 <div
                                                     class="row row-0 d-flex align-items-center justify-content-between">
-                                                    <img src="{{asset('assets/images/products/apel.jpg')}}"
+                                                    <img src="{{asset('storage/beasiswa/'.$data->gambar)}}"
                                                          alt="" width="70px">
                                                     <div class="pl-2 pt-1" style="width: 60%">
-                                                        <label class="var">{{__('$detail->nama')}}</label>
-                                                        <div class="d-flex align-items-center">
-                                                            <span>Rp</span>
-                                                            <input type="text"
-                                                                   class="val text-right @error('harga') is invalid @enderror"
-                                                                   value="{{__('$detail->harga')}}" readonly id="harga"
-                                                                   style="width: 40px;">
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <span>x</span>
-                                                        <input type="number" readonly value={{__('$jumlah')}}
-                                                            class="val text" style="width: 10px" id="jumlah"
-                                                        name="jumlah">
+                                                        <label class="var">{{__($data->nama_beasiswa)}}</label>
                                                     </div>
                                                 </div>
                                             </li>
