@@ -35,14 +35,6 @@
                         </a>
                     </li>
                 @endguest
-                @guest
-                    <li class="el-megamenu el-megamenu-lg">
-                        <a href="{{route('homeadmin')}}">
-                            <span class="text text-light">Admin</span>
-                            <i class="ti-angle-right hidden-lg-up"></i>
-                        </a>
-                    </li>
-                @endguest
             </ul>
             <button class="button button-menu button-display-sidenav">
                 <span></span>
@@ -68,11 +60,16 @@
                                         <span class="text">Login</span>
                                     </a>
                                 </li>
-                                    <li>
-                                        <a href="{{route('register')}}">
-                                            <span class="text">Register</span>
-                                        </a>
-                                    </li>
+                                <li>
+                                    <a href="{{route('register')}}">
+                                        <span class="text">Register</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{route('homeadmin')}}">
+                                        <span class="text">Login Admin</span>
+                                    </a>
+                                </li>
                             @else
                                 <li>
                                     <a href="#">

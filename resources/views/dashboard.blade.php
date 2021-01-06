@@ -130,7 +130,7 @@
                     <div class="display-center">
                         <div class="inner">
                             <h2 class="title" style="color: white">BKREA<br />Beasiswa Kreativ</h2>
-                            <a href="#" class="button button-sm button-dark mt-20">
+                            <a href="{{route('listbea')}}" class="button button-sm button-dark mt-20">
                                 <span class="text">List Beasiswa</span>
                             </a>
                         </div>
