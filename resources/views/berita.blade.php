@@ -36,11 +36,6 @@
     <span class="sidenav-close"></span>
 </div>
 <!--/-->
-<!--Shopping Cart-->
-{{--<div class="app-shopping-cart app-shopping-cart-1">--}}
-{{--    @include('layouts.cartlist')--}}
-{{--</div>--}}
-<!--/-->
 <!--Banner-->
 <section class="section section-clearfix-1">
     <header class="el-banner el-banner-1 overlay overlay-color">

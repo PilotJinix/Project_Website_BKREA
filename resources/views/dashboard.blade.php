@@ -36,11 +36,7 @@
     <span class="sidenav-close"></span>
 </div>
 <!--/-->
-<!--Shopping Cart-->
-<div class="app-shopping-cart app-shopping-cart-1">
-{{--    @include('layouts.cartlist')--}}
-</div>
-<!--/-->
+
 <!--Hero-->
 <section class="section section-hero section-hero-1 overlay-color overlay-pattern">
     <div class="display-center">

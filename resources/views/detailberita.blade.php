@@ -36,11 +36,6 @@
     <span class="sidenav-close"></span>
 </div>
 <!--/-->
-<!--Shopping Cart-->
-{{--<div class="app-shopping-cart app-shopping-cart-1">--}}
-{{--    @include('layouts.cartlist')--}}
-{{--</div>--}}
-<!--/-->
 <!--Berita-->
 <section class="section section-single-post section-single-post-1">
     <div class="display-spacing display-spacing-plus">

@@ -35,12 +35,8 @@
     @include('layouts.sidebar')
 </div>
 <!--/-->
-<!--Shopping Cart-->
-{{--<div class="app-shopping-cart app-shopping-cart-1">--}}
-{{--    @include('layouts.cartlist');--}}
-{{--</div>--}}
-<!--/-->
-<!--Checkout-->
+
+
 <section class="section section-page section-product-detail section-product-detail-1">
     <div class="display-spacing mt-space">
         <div class="container mb-space">
