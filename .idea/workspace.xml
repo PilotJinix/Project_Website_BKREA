@@ -184,21 +184,7 @@
       <workItem from="1609751103348" duration="5465000" />
       <workItem from="1609763184391" duration="13681000" />
       <workItem from="1609859817367" duration="66968000" />
-      <workItem from="1609982637586" duration="16715000" />
-    </task>
-    <task id="LOCAL-00036" summary="List Bea admin">
-      <created>1609524622661</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1609524622661</updated>
-    </task>
-    <task id="LOCAL-00037" summary="List Bea admin">
-      <created>1609594754417</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1609594754418</updated>
+      <workItem from="1609982637586" duration="20175000" />
     </task>
     <task id="LOCAL-00038" summary="List Bea admin">
       <created>1609595287838</created>
@@ -529,7 +515,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609997645605</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="bea done">
+      <created>1609999388168</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1609999388168</updated>
+    </task>
+    <task id="LOCAL-00086" summary="bea done">
+      <created>1609999529198</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1609999529200</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

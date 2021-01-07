@@ -84,7 +84,20 @@
                         </div>
                         <!--/-->
                     </div>
+                    @if($dataa->feedback == "Diterima" and $dataa->review == "belum")
+                        <div>
+                            <form action="">
+                                <h4>Reviews</h4>
+                                <textarea style="background-color: white" name="review" cols="150" rows="3"></textarea>
+                                <button id="button-submit" type="submit"
+                                        class="button button-md button-block button-primary">
+                                    <span class="text">Beri Penilaian</span>
+                                </button>
+                            </form>
+                        </div>
+                    @endif
                 </div>
+
                 <!--Sidebar-->
                 <aside class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 order-lg-1 order-xl-1">
                     <!--Widget-->
@@ -110,6 +123,7 @@
 <!--/-->
 
 <!--Scripts-->
+
 <script src="{{asset('assets/js/jquery.min.js')}}"></script>
 <script src="{{asset('assets/js/plugins.min.js')}}"></script>
 <script src="{{asset('assets/js/main-scripts.js')}}"></script>
