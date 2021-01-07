@@ -81,7 +81,7 @@ class RegisterController extends Controller
             'nama_lengkap' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'username' => 'required|string|max:100|regex:/^\S*$/u|unique:users',
-            'nomer_hp' => 'required|string|max:15',
+            'nomer_hp' => 'required|string|max:15|min:9',
             'alamat' => 'required|string|max:255',
             'password' => 'required|string|min:8|confirmed',
             'password_confirmation' => 'required',

@@ -20,7 +20,7 @@
                         <div class="col-sm-12 m-t-2">
                             <div class="md-form-group">
                                 <input type="file" class="md-input" name="gambar_artikel" required>
-                                <label>Deskripsi</label>
+                                <label>Foto Berita</label>
                             </div>
                         </div>
                         @error('gambar_artikel')

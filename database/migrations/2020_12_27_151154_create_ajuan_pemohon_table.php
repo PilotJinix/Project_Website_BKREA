@@ -20,6 +20,7 @@ class CreateAjuanPemohonTable extends Migration
             $table->string('no_hp_pemohon');
             $table->string('data_pemohon');
             $table->string('review')->default("belum");
+            $table->string('feedback')->nullable();
             $table->bigInteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->bigInteger('beasiswa_id')->unsigned();

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7f70338-50ac-4820-bc82-34aadcf2e4ba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/riwayat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/riwayat.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_27_151154_create_ajuan_pemohon_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_27_151154_create_ajuan_pemohon_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/addberita.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addberita.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,14 +185,7 @@
       <workItem from="1609731604133" duration="10900000" />
       <workItem from="1609751103348" duration="5465000" />
       <workItem from="1609763184391" duration="13681000" />
-      <workItem from="1609859817367" duration="62784000" />
-    </task>
-    <task id="LOCAL-00027" summary="seasion">
-      <created>1609264314255</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1609264314255</updated>
+      <workItem from="1609859817367" duration="66363000" />
     </task>
     <task id="LOCAL-00028" summary="seasion">
       <created>1609265054722</created>
@@ -526,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609966590088</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="bea done">
+      <created>1609967032475</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1609967032475</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
