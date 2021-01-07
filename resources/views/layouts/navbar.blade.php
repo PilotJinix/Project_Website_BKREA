@@ -72,7 +72,7 @@
                                 </li>
                             @else
                                 <li>
-                                    <a href="#">
+                                    <a href="{{route('selftakun')}}">
                                         <span class="text">{{__('Profile')}}</span>
                                     </a>
                                 </li>

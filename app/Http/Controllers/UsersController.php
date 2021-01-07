@@ -28,4 +28,12 @@ class UsersController extends Controller{
 
         return view('dashboard', compact('akun', 'data'));
     }
+
+    public function my_account(Request $request){
+        $user = $request->session()->get('username');
+        $akun = DB::table('users')->where('username',$user)->first();
+
+
+        return view('selfakun', compact('akun'));
+    }
 }

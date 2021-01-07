@@ -16,6 +16,7 @@
 
 Route::get('/', 'UsersController@index')->name('home');
 Route::get('/dashboard', 'UsersController@passuser')->name('dashboard');
+Route::get('akun', 'UsersController@my_account')->name('selftakun');
 
 Route::get('/login', 'Auth\LoginController@index')->name('login');
 Route::post('/auten', 'Auth\LoginController@auten')->name('auten');
