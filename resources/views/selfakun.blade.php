@@ -45,7 +45,6 @@
                 <div class="card w-100 rounded p-5 h-100">
                     <div class="container">
                         <div class="row">
-
                             @if (session()->has('edit-success'))
                                 <div id="message" class="w-100 position-absolute"
                                      style="z-index: 5;margin-top: -2.5rem;left:40%">
@@ -63,7 +62,7 @@
                                             class="card-img-top w-auto" alt="__FOTO__"></a>
                                     <div class="card-body bg-primary rounded">
                                         <a href="#" class="text-light">
-                                            <h5 class="card-title text-center h5">#</h5>
+                                            <h5 class="card-title text-center h5">{{$akun->nama_lengkap}}</h5>
                                         </a>
                                     </div>
                                 </div>
