@@ -62,6 +62,7 @@ class ListBeaController extends Controller
             'email_pemohon' => $request->email,
             'no_hp_pemohon' => $request->no_hp,
             'data_pemohon' => $file_name,
+            'feedback' => 'Dalam Proses',
             'user_id' =>$user_id,
             'beasiswa_id' => $id
         ]);

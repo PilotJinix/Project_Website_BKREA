@@ -89,7 +89,7 @@
                         </a>
                         <ul class="nav-sub">
                             <li>
-                                <a href="inbox.html" >
+                                <a href="{{route('Aajuan')}}" >
                                     <span class="nav-text">List Ajuan Pemohon</span>
                                 </a>
                             </li>

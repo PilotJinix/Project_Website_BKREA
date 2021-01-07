@@ -4,18 +4,15 @@
     <div  class="padding">
         <div class="box">
             <div class="box-header">
-                <h2>Daftar Data Beasiswa</h2>
+                <h2>Daftar Data Pemohon</h2>
             </div>
-            <div class="col-xs-12">
-                <a href="{{route('new-beasiswa')}}" class="btn btn-outline b-primary text-primary">Tambah Beasiswa</a>
-            </div>
-
             <div class="table-responsive">
                 <table id="example" class="table table-striped b-t">
                     <thead>
                     <tr>
                         <th>Nama Beasiswa</th>
-                        <th>Kuota</th>
+                        <th>Nama Pemohon</th>
+                        <th>Terakhir diubah</th>
                         <th>Terakhir diubah</th>
                         <th>Actions</th>
                     </tr>
@@ -23,12 +20,12 @@
                     <tbody>
                     @foreach($data as $data)
                         <tr>
-                            <td width="50%">{!! \Illuminate\Support\Str::substr($data->nama_beasiswa,0,60) !!}</td>
-                            <td>{{__($data->kuota)}}</td>
+                            <td width="40%">{!! \Illuminate\Support\Str::substr($data->nama_beasiswa,0,60) !!}</td>
+                            <td width="20%">{!! $data->nama_pemohon !!}</td>
+                            <td>{{__($data->feedback)}}</td>
                             <td>{{__($data->updated_at)}}</td>
                             <td>
-                                <a href="#" class=" btn btn-sm primary">Baca Selengkapnya</a>
-                                <a href="{{route('edit-beasiswa',$data->id)}}" class=" btn btn-sm warn">Edit</a>
+                                <a href="{{route('edit-beasiswa',$data->id)}}" class=" btn btn-sm warn">Update</a>
                                 <button class=" btn btn-sm danger" data-toggle="modal" data-target={{__("#modal".$data->id)}}>
                                     Hapus
                                 </button>
@@ -47,7 +44,7 @@
                                         </p>
                                     </div>
                                     <div class="modal-footer">
-                                        <a href="{{route('deletebeasiwa',$data->id)}}">
+                                        <a href="{{route('hapuspengajuan',$data->id)}}">
                                             <button type="button" class="btn btn-info ">Konfirmasi</button>
                                         </a>
                                         <button type="button" class="btn btn-danger waves-effect"

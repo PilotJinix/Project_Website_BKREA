@@ -56,6 +56,9 @@ Route::post('Aberita/save-edit/{id}', 'Admin\ListBeritaController@saveEdit')->na
 Route::get('Aberita/new/edit/{id}', 'Admin\ListBeritaController@edit')->name('edit-berita');
 Route::get('Aberita/new/delete/{id}', 'Admin\ListBeritaController@delete')->name('hapus-berita');
 
+Route::get('Aajuan', 'Admin\ListAjuanController@index')->name('Aajuan');
+Route::get('Aajuan/delete/{id}', 'Admin\ListAjuanController@hapus')->name('hapuspengajuan');
+
 
 
 
