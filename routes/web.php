@@ -44,6 +44,7 @@ Route::post('riwayat/review/{id}', 'PengajuanController@review')->name('review')
 /*( Route Untuk Admin )*/
 
 Route::get('/logadmin', 'Admin\Auth\DashboardAController@login')->name('logadmin');
+Route::post('logadmin/auten', 'Admin\Auth\LoginController@auten')->name('auten');
 Route::get('homeadmin', 'Admin\Auth\DashboardAController@index')->name('homeadmin');
 Route::get('homeadmin/akun/delete/{id}', 'Admin\DashboardAController@hapus')->name('deleteakun');
 

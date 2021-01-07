@@ -41,29 +41,29 @@
         </div>
         <div class="p-a-md box-color r box-shadow-z1 text-color m-a">
             <div class="m-b text-sm">
-                Sign in with your Flatkit Account
+                <h5>Login</h5>
             </div>
-            <form name="form">
+            <form method="post" action="{{route('auten')}}">
                 <div class="md-form-group float-label">
-                    <input type="email" class="md-input" ng-model="user.email" required>
+                    <input type="text" class="md-input" ng-model="user.email" name="username" required>
                     <label>Email</label>
                 </div>
                 <div class="md-form-group float-label">
-                    <input type="password" class="md-input" ng-model="user.password" required>
+                    <input type="password" class="md-input" ng-model="user.password" name="password" required>
                     <label>Password</label>
                 </div>
-                <div class="m-b-md">
-                    <label class="md-check">
-                        <input type="checkbox"><i class="primary"></i> Keep me signed in
-                    </label>
-                </div>
                 <button type="submit" class="btn primary btn-block p-x-md">Sign in</button>
+                <br>
+                <h5>Default</h5>
+                <div class="md-form-group float-label">
+                    <input type="email" class="md-input" ng-model="user.email" >
+                    <label>admin123</label>
+                </div>
+                <div class="md-form-group float-label">
+                    <input type="email" class="md-input" ng-model="user.email">
+                    <label>12345678</label>
+                </div>
             </form>
-        </div>
-
-        <div class="p-v-lg text-center">
-            <div class="m-b"><a ui-sref="access.forgot-password" href="forgot-password.html" class="text-primary _600">Forgot password?</a></div>
-            <div>Do not have an account? <a ui-sref="access.signup" href="signup.html" class="text-primary _600">Sign up</a></div>
         </div>
     </div>
 
