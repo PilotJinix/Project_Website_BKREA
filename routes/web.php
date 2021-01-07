@@ -38,8 +38,8 @@ Route::get('riwayat/{id}', 'PengajuanController@detail')->name('detailriwayat');
 
 /*( Route Untuk Admin )*/
 
-//Route::get('/admin', 'DashboardAController@index')->name('homeadmin');
-Route::get('homeadmin', 'Admin\DashboardAController@index')->name('homeadmin');
+Route::get('/logadmin', 'Admin\Auth\DashboardAController@login')->name('logadmin');
+Route::get('homeadmin', 'Admin\Auth\DashboardAController@index')->name('homeadmin');
 Route::get('homeadmin/akun/delete/{id}', 'Admin\DashboardAController@hapus')->name('deleteakun');
 
 Route::get('Abeasiswa', 'Admin\ListBeaController@index')->name('Abeasiswa');

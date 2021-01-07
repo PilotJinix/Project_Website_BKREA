@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Admin\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -20,5 +20,7 @@ class DashboardAController extends Controller
         DB::table('users')->where('id',$id)->delete();
         return redirect()->route('homeadmin')->with('deleted','Akun berhasil dihapus');
     }
+
+
 
 }

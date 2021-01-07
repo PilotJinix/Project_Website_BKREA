@@ -76,10 +76,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a>
-                            <span class="nav-caret">
-                                <i class="fa fa-caret-down"></i>
-                            </span>
+                        <a href="{{route('Aajuan')}}">
                             <span class="nav-icon">
                                 <i class="material-icons">&#xe5c3;
                                     <span ui-include="'../assets/images/i_1.svg'"></span>
@@ -87,34 +84,7 @@
                             </span>
                             <span class="nav-text">Ajuan Pemohon</span>
                         </a>
-                        <ul class="nav-sub">
-                            <li>
-                                <a href="{{route('Aajuan')}}" >
-                                    <span class="nav-text">List Ajuan Pemohon</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="contact.html" >
-                                    <span class="nav-text">Contacts</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="calendar.html" >
-                                    <span class="nav-text">Calendar</span>
-                                </a>
-                            </li>
-                        </ul>
                     </li>
-{{--                    <li>--}}
-{{--                        <a href="widget.html" >--}}
-{{--                            <span class="nav-icon">--}}
-{{--                                <i class="material-icons">&#xe8d2;--}}
-{{--                                    <span ui-include="'../assets/images/i_3.svg'"></span>--}}
-{{--                                </i>--}}
-{{--                            </span>--}}
-{{--                            <span class="nav-text">Widgets</span>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
                 </ul>
             </nav>
         </div>
