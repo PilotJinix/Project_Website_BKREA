@@ -20,12 +20,17 @@ class ListBeaController extends Controller
     public function detailbea(Request $request, $id){
         $user = $request->session()->get('username');
         $data = DB::table('beasiswa')->where('id', $id)->first();
+
+        $join =DB::table('komentar')
+            ->join('users', 'komentar.user_id', '=', 'users.id')
+            ->where('komentar.beasiswa_id', '=', $id)->select('komentar.*', 'users.username')->latest()->get();
+
         if ($user != null) {
             $akun = DB::table('users')->where('username',$user)->first();
 
-            return view('detailbea', compact('akun','data'));
+            return view('detailbea', compact('akun','data', 'join'));
         }
-        return view('detailbea', compact('data'));
+        return view('detailbea', compact('data', 'join'));
     }
 
     public function lanjutisi(Request $request, $id){
@@ -37,7 +42,7 @@ class ListBeaController extends Controller
             return view('applybea', compact('akun','data'));
         }
         return redirect()->route('login');
-        return view('auth.login');
+//        return view('auth.login');
     }
 
     public function createfrom(Request $request, $id){

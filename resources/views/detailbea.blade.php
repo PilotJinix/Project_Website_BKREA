@@ -130,6 +130,9 @@
                         <li class="active" data-tab-link="tab-1">
                             <span class="text">Description</span>
                         </li>
+                        <li data-tab-link="tab-3">
+                            <span class="text mr-2">{{__('Review')}}</span>
+                        </li>
                     </ul>
                 </div>
                 <!--/-->
@@ -140,6 +143,32 @@
                             <div class="content">
                                 <h2>Informasi Beasiswa</h2>
                                 {!!$data->deskripsi!!}
+                            </div>
+                        </li>
+                        <li data-tab-content="tab-3">
+                            <div class="content">
+                                <h2>Review Beasiswa</h2>
+                                @foreach ($join as $join)
+                                    <div class="el-comments">
+                                        <ul>
+                                            <li>
+                                                <div class="el-comments-content">
+                                                    <div class="el-comments-info">
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <h5
+                                                                    class="el-comments-author">{!! ($join->username) !!}</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="m-l-2">
+                                                        Komentar : {!! $join->komentar !!}
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                @endforeach
                             </div>
                         </li>
                     </ul>
