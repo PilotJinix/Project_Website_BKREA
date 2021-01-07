@@ -90,7 +90,7 @@
                         <ul class="nav-sub">
                             <li>
                                 <a href="inbox.html" >
-                                    <span class="nav-text">Inbox</span>
+                                    <span class="nav-text">List Ajuan Pemohon</span>
                                 </a>
                             </li>
                             <li>
