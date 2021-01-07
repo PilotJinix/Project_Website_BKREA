@@ -33,16 +33,12 @@ class PengajuanController extends Controller
             ->where('ajuan_pemohon.user_id', '=', $pengguna)->select('ajuan_pemohon.*','beasiswa.nama_beasiswa', 'beasiswa.gambar', 'beasiswa.deskripsi')->latest()
             ->get();
 
-        $data1 = DB::table('ajuan_pemohon')
-            ->join('beasiswa', 'ajuan_pemohon.beasiswa_id','=','beasiswa.id')
-            ->where('ajuan_pemohon.id','=','beasiswa.id')->select('nama_beasiswa', 'deskripsi')
-            ->get();
 
         $data = DB::table('beasiswa')
             ->join('ajuan_pemohon', 'ajuan_pemohon.beasiswa_id','=','beasiswa.id')
             ->where('ajuan_pemohon.id','=',$id)
             ->get();
-//        return dd($detail);
+
         return view('riwayat', compact('akun','riwayat', 'data'));
     }
 

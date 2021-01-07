@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7f70338-50ac-4820-bc82-34aadcf2e4ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/detailpemohon.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Ajuan.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Ajuan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ListAjuan.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ListAjuanController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ListBeaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ListBeaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ListAjuanController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ListAjuanController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PengajuanController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PengajuanController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/listajuan.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/listajuan.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -189,14 +187,7 @@
       <workItem from="1609751103348" duration="5465000" />
       <workItem from="1609763184391" duration="13681000" />
       <workItem from="1609859817367" duration="66968000" />
-      <workItem from="1609982637586" duration="3335000" />
-    </task>
-    <task id="LOCAL-00031" summary="seasion">
-      <created>1609324413421</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1609324413421</updated>
+      <workItem from="1609982637586" duration="11829000" />
     </task>
     <task id="LOCAL-00032" summary="seasion">
       <created>1609440237852</created>
@@ -534,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609982678636</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="bea done">
+      <created>1609985991189</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1609985991189</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

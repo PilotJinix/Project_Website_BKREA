@@ -57,7 +57,9 @@ Route::get('Aberita/new/edit/{id}', 'Admin\ListBeritaController@edit')->name('ed
 Route::get('Aberita/new/delete/{id}', 'Admin\ListBeritaController@delete')->name('hapus-berita');
 
 Route::get('Aajuan', 'Admin\ListAjuanController@index')->name('Aajuan');
+Route::get('Aajuan/update/{id}', 'Admin\ListAjuanController@detail')->name('Update-Aajuan');
 Route::get('Aajuan/delete/{id}', 'Admin\ListAjuanController@hapus')->name('hapuspengajuan');
+Route::get('Aajuan/update/download/{id}', 'Admin\ListAjuanController@download')->name('download');
 
 
 
