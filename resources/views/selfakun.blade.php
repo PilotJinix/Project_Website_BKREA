@@ -51,7 +51,7 @@
                                     <div class="bg-success w-25 pl-4 p-2 text-light d-flex align-items-center text-center"
                                          style="border-radius: 5px">
                                         <i class="fa fa-check-circle" aria-hidden="true"></i>
-                                        <span class="ml-2">'{{'session()->get(edit-success)'}}'</span>
+                                        <span class="ml-2">'{{session()->get('edit-success')}}'</span>
                                     </div>
                                 </div>
                             @endif
@@ -66,7 +66,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <a href="{{'route(edit-profile)'}}" class="link">
+                                <a href="{{route('edit-akun')}}" class="link">
                                     <button class="rounded button-primary mt-2 p-2 pl-4 pr-4 w-100">
                                         <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                         <span role="button">Edit Profile</span>
