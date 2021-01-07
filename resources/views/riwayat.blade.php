@@ -86,7 +86,8 @@
                     </div>
                     @if($dataa->feedback == "Diterima" and $dataa->review == "belum")
                         <div>
-                            <form action="">
+                            <form action="{{route('review', $dataa->id)}}" method="post">
+                                @csrf
                                 <h4>Reviews</h4>
                                 <textarea style="background-color: white" name="review" cols="150" rows="3"></textarea>
                                 <button id="button-submit" type="submit"

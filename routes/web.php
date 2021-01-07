@@ -34,6 +34,7 @@ Route::get('detailberita/{id}', 'BeritaController@detailberita')->name('detailbe
 
 Route::get('riwayat', 'PengajuanController@index')->name('riwayat');
 Route::get('riwayat/{id}', 'PengajuanController@detail')->name('detailriwayat');
+Route::post('riwayat/review/{id}', 'PengajuanController@review')->name('review');
 
 
 /*( Route Untuk Admin )*/

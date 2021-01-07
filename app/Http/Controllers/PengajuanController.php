@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 
 use App\Beasiswa;
+use App\Komentar;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -40,6 +41,31 @@ class PengajuanController extends Controller
             ->get();
 
         return view('riwayat', compact('akun','riwayat', 'data'));
+    }
+
+    public function review(Request $request, $id){
+        $user = $request->session()->get('username');
+        $akun = DB::table('users')->where('username',$user)->first();
+        $user_id = $akun->id;
+        $data = DB::table('ajuan_pemohon')->where('id',$id)->first();
+        $bea_id = $data->beasiswa_id;
+//        return dd($bea_id);
+
+        $request->validate([
+            'review' => 'required|string|max:255',
+        ]);
+
+        Komentar::create([
+            'komentar' => $request->review,
+            'user_id' => $user_id,
+            'beasiswa_id' => $bea_id,
+        ]);
+
+        DB::table('ajuan_pemohon')->where('id', $id)->update([
+            'review' => 'sudah'
+        ]);
+
+        return redirect()->route('riwayat');
     }
 
 }
