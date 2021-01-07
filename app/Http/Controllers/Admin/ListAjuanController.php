@@ -45,7 +45,22 @@ class ListAjuanController extends Controller{
         $data1 = $data[0];
         $file = $data1->data_pemohon ;
             return response()->download(storage_path('app/public/data/'.$file));
+    }
 
+    public function accept($id){
+        DB::table('ajuan_pemohon')->where('id',$id)->update([
+            'feedback' => 'Diterima',
+        ]);
+        return redirect()->route('Aajuan');
+    }
+
+
+    public function reject($id){
+        DB::table('ajuan_pemohon')->where('id',$id)->update([
+            'feedback' => 'Tidak Diterima',
+        ]);
+
+        return redirect()->route('Aajuan');
     }
 
 }
