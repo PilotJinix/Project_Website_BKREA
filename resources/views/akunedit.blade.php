@@ -55,7 +55,7 @@
                                                 src="{{asset('assets/images/people/blank-profile.webp')}}"
                                                 class="card-img-top w-auto" alt="__FOTO__"></a>
                                         <div class="card-body bg-primary rounded">
-                                            <h5 class="card-title text-center h5 text-light">nama lengakap
+                                            <h5 class="card-title text-center h5 text-light">{{$akun->nama_lengkap}}
                                             </h5>
                                         </div>
                                     </div>
@@ -167,7 +167,7 @@
                 <i id="closeModalEditPassword" class="fa fa-times" aria-hidden="true" style="cursor: pointer"></i>
             </div>
             <div class="card-body">
-                <form action="#" method="post">
+                <form action="{{route('edit-password-save')}}" method="post">
                     @csrf
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password Lama</label>

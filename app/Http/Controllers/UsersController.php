@@ -85,8 +85,9 @@ class UsersController extends Controller{
             DB::table('users')->where('id',$id)->update([
                 'password' => Hash::make($request->password),
             ]);
-            return redirect()->route('edit-profile')->with('successUpdate','Password Anda Berhasil DiUbah!');
+            return redirect()->route('edit-akun')->with('successUpdate','Password Anda Berhasil DiUbah!');
         }
-        return redirect()->route('edit-profile')->with('error-password','Password Lama Anda Salah!');
+        return redirect()->route('edit-akun')->with('error-password','Password Lama Anda Salah!');
     }
 }
+
