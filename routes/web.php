@@ -58,6 +58,8 @@ Route::get('Aberita/new/delete/{id}', 'Admin\ListBeritaController@delete')->name
 
 Route::get('Aajuan', 'Admin\ListAjuanController@index')->name('Aajuan');
 Route::get('Aajuan/update/{id}', 'Admin\ListAjuanController@detail')->name('Update-Aajuan');
+Route::get('Aajuan/update/acc/{id}', 'Admin\ListAjuanController@accept')->name('acc-Aajuan');
+Route::get('Aajuan/update/reject/{id}', 'Admin\ListAjuanController@reject')->name('reject-Aajuan');
 Route::get('Aajuan/delete/{id}', 'Admin\ListAjuanController@hapus')->name('hapuspengajuan');
 Route::get('Aajuan/update/download/{id}', 'Admin\ListAjuanController@download')->name('download');
 

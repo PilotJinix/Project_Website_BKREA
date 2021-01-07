@@ -12,7 +12,7 @@
                     <tr>
                         <th>Nama Beasiswa</th>
                         <th>Nama Pemohon</th>
-                        <th>Terakhir diubah</th>
+                        <th>FeedBack</th>
                         <th>Terakhir diubah</th>
                         <th>Actions</th>
                     </tr>
@@ -25,7 +25,9 @@
                             <td>{{__($data->feedback)}}</td>
                             <td>{{__($data->updated_at)}}</td>
                             <td>
-                                <a href="{{route('Update-Aajuan',$data->id)}}" class=" btn btn-sm warn">Update</a>
+                                @if($data->feedback == 'Dalam Proses')
+                                    <a href="{{route('Update-Aajuan',$data->id)}}" class=" btn btn-sm warn">Update</a>
+                                @endif
                                 <button class=" btn btn-sm danger" data-toggle="modal" data-target={{__("#modal".$data->id)}}>
                                     Hapus
                                 </button>
