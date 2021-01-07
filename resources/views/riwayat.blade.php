@@ -61,7 +61,7 @@
                                         <img src="{{asset('assets/images/icons/click.svg')}}" alt="Click me">
                                     </div>
                                     <div class="accordion-title">
-                                        <h4>Silahkan Masukkan Foto buku Rekening dan Nomer Rekening</h4>
+                                        <h4>Data Pemohon</h4>
                                     </div>
                                     <div class="accordion-arrow">
                                         <div class="display-center">
@@ -71,7 +71,15 @@
                                 </div>
                             </div>
                             <div class="el-accordion-body" style="display: none;">
-                                <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+                                <h4>Nama Pemohon</h4>
+                                <p>{{__($dataa->nama_pemohon)}}</p>
+                                <br>
+                                <h4>FeedBack</h4>
+                                @if($dataa->feedback == 'Diterima')
+                                    <p style="color: lawngreen">{{__($dataa->feedback)}}</p>
+                                @else
+                                    <p style="color: red">{{__($dataa->feedback)}}</p>
+                                @endif
                             </div>
                         </div>
                         <!--/-->
