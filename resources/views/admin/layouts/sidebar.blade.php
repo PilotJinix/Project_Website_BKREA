@@ -85,6 +85,17 @@
                             <span class="nav-text">Ajuan Pemohon</span>
                         </a>
                     </li>
+
+                    <li>
+                        <a href="{{route('Alogout')}}">
+                            <span class="nav-icon">
+                                <i class="material-icons">&#xe5c3;
+                                    <span ui-include="'../assets/images/i_1.svg'"></span>
+                                </i>
+                            </span>
+                            <span class="nav-text">Logout</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>

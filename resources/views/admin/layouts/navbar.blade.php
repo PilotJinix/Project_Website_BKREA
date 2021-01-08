@@ -16,9 +16,11 @@
                   <span class="avatar w-32">
                     <img src="{{asset('admin/assets/images/aa.jpg')}}" alt="...">
                     <i class="on b-white bottom"></i>
+                    <!-- <a href="{{route('logout')}}">Logout</a> -->
                   </span>
                 </a>
-                <div ui-include="'../views/blocks/dropdown.user.html'"></div>
+                <div ui-include="'../views/blocks/dropdown.user.html'">
+                </div>
             </li>
         </ul>
         <!-- / navbar right -->

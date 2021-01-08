@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('nomer_hp');
             $table->string('alamat');
             $table->string('password');
-            $table->string('nik')->nullable();
+            $table->string('role')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

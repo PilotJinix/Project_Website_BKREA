@@ -52,7 +52,7 @@ class ListBeaController extends Controller
         $user_id = $akun->id;
         $request->validate([
             'nama_pemohon' => 'required|string',
-            'data' => 'required|file|mimes:zip|max:500',
+            'data' => 'required|file|mimes:zip|max:10000',
             "email" => 'required|string',
             "no_hp" => 'required|string',
         ]);

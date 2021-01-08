@@ -27,7 +27,6 @@
                             <td>{{__($data->kuota)}}</td>
                             <td>{{__($data->updated_at)}}</td>
                             <td>
-                                <a href="#" class=" btn btn-sm primary">Baca Selengkapnya</a>
                                 <a href="{{route('edit-beasiswa',$data->id)}}" class=" btn btn-sm warn">Edit</a>
                                 <button class=" btn btn-sm danger" data-toggle="modal" data-target={{__("#modal".$data->id)}}>
                                     Hapus

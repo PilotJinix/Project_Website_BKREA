@@ -23,7 +23,6 @@
                         <tr>
                             <td>{!! \Illuminate\Support\Str::substr($data->judul,0,60) !!}</td>
                             <td>
-                                <a href="#" class=" btn btn-sm primary">Baca Selengkapnya</a>
                                 <a href="{{route('edit-berita',$data->id)}}" class=" btn btn-sm warn">Edit</a>
                                 <button class=" btn btn-sm danger" data-toggle="modal" data-target={{__("#modal".$data->id)}}>
                                     Hapus

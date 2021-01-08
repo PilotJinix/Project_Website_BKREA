@@ -73,7 +73,7 @@ class RegisterController extends Controller
 
     public function index()
     {
-        return view('auth\register');
+        return view('auth.register');
     }
 
     public function register(Request $request){
@@ -90,6 +90,7 @@ class RegisterController extends Controller
         User::create([
             'nama_lengkap' => $request->nama_lengkap,
             'username' => $request->username,
+            'role' => 'user',
             'email' => $request->email,
             'nomer_hp' => $request->nomer_hp,
             'alamat' => $request->alamat,

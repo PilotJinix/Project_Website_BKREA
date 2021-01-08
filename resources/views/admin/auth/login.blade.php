@@ -43,10 +43,11 @@
             <div class="m-b text-sm">
                 <h5>Login</h5>
             </div>
-            <form method="post" action="{{route('auten')}}">
+            <form method="post" action="{{route('postlogin')}}">
+                @csrf
                 <div class="md-form-group float-label">
                     <input type="text" class="md-input" ng-model="user.email" name="username" required>
-                    <label>Email</label>
+                    <label>Username</label>
                 </div>
                 <div class="md-form-group float-label">
                     <input type="password" class="md-input" ng-model="user.password" name="password" required>
@@ -57,7 +58,7 @@
                 <h5>Default</h5>
                 <div class="md-form-group float-label">
                     <input type="email" class="md-input" ng-model="user.email" >
-                    <label>admin123</label>
+                    <label>admin</label>
                 </div>
                 <div class="md-form-group float-label">
                     <input type="email" class="md-input" ng-model="user.email">

@@ -66,7 +66,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{route('homeadmin')}}">
+                                    <a href="{{route('logadmin')}}">
                                         <span class="text">Login Admin</span>
                                     </a>
                                 </li>

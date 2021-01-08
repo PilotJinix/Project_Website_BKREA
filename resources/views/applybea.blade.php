@@ -135,7 +135,7 @@
                                             <input type="file" class="@error('ktp') is fail @enderror"
                                                    style="cursor: pointer;border: none" name="data">
                                         </div>
-                                        <label style="color: gray">(Max data = 500KB )</label>
+                                        <label style="color: gray">(Max data = 10MB )</label>
                                     </div>
                                     @error('data')
                                     <span class="text-danger invalid-feedback" role="alert">
