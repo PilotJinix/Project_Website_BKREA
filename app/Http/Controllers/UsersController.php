@@ -87,7 +87,7 @@ class UsersController extends Controller{
             ]);
             return redirect()->route('edit-akun')->with('successUpdate','Password Anda Berhasil DiUbah!');
         }
-        return redirect()->route('edit-akun')->with('error-password','Password Lama Anda Salah!');
+        return redirect()->route('edit-akun ')->with('error-password','Password Lama Anda Salah!');
     }
 }
 
